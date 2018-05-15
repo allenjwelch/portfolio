@@ -193,6 +193,7 @@
 /* ADD STYLE ====================*/
 a {
   color: white; 
+  text-decoration: none; 
 }
 
 #box1, #box5, #box10{
