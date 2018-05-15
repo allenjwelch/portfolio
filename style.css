@@ -33,6 +33,7 @@
 
 .box {
   position: relative;
+  padding: 10px;
 }
 
 .box1 {
@@ -98,16 +99,56 @@
 
 /* ADD STYLE */
 #box1 {
-  /* background: linear-gradient(to left, #6441a5, #2a0845); */
   background-color: #008CBA;
-  /* background-image:url('assets/imgs/trivia2.PNG') ;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;  */
+  color: white;
 }
 
 /* BOX IMAGES AND ANIMATIONS */
-img {
-  
+.b1Image {
+  background-image:url('assets/imgs/tape1.jpg');
+}
+
+.b2Image {
+  background-image:url('assets/imgs/RobotWars.PNG');
+}
+
+.b3Image {
+  background-image:url('assets/imgs/trivia.PNG');
+  border-radius: 100%; 
+}
+
+.b4Image {
+  background-image:url('assets/imgs/liri.PNG');
+}
+
+.b5Image {
+  background-image:url('assets/imgs/GiphyAPI.PNG');
+}
+
+.b6Image {
+  background-image:url('assets/imgs/trainlogo.jpg');
+  border-radius: 100%; 
+}
+
+.b7Image {
+  background-image:url('assets/imgs/friendFinder.PNG');
+}
+
+.b8Image {
+  background-image:url('assets/imgs/Bamazon.PNG');
+}
+
+.b9Image {
+  background-image:url('assets/imgs/Hangman.PNG');
+  border-radius: 100%; 
+}
+
+.b10Image {
+  background-image:url('assets/imgs/emberTasks.PNG');
+}
+
+.b11Image {
+  background-image:url('assets/imgs/#');
 }
 
 .overlay {
@@ -118,40 +159,73 @@ img {
   right: 0;
   height: 100%;
   width: 100%;
-  opacity: 1;
-  transition: 1s ease-in;
-  /* transform: rotate(20deg); */
-  /* background-color: #008CBA; */
-  background-image:url('assets/imgs/trivia2.PNG') ;
+  transition: 1s ease-in-out;
   background-repeat: no-repeat;
   background-size: 100% 100%; 
 }
 
 .box1:hover .overlay {
-  opacity: 1;
   transform: translateX(-700px)
-
 }
 
-.text {
-  opacity: 0;
+.box2:hover .overlay {
+  transform: translateX(700px)
+}
+
+.box3:hover .overlay {
+  transform: scale(0); 
+  opacity: 0; 
+}
+
+.box4:hover .overlay {
+  transform: translateX(-700px)
+}
+
+.box5:hover .overlay {
+  transform: translateX(700px)
+}
+
+.box6:hover .overlay {
+  transform: scale(0); 
+  opacity: 0; 
+}
+
+.box7:hover .overlay {
+  transform: translateX(-700px)
+}
+
+.box8:hover .overlay {
+  transform: translateX(700px)
+}
+
+.box9:hover .overlay {
+  transform: scale(0); 
+  opacity: 0; 
+}
+
+.box10:hover .overlay {
+  transform: translateX(-700px)
+}
+
+.box11:hover .overlay {
+  transform: translateX(700px)
+}
+
+
+.textCenter {
   color: white;
-  font-size: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
-/* .box1>img:hover{
-  animation-name: anim1; 
-  animation-duration: 1s;
 
+.textRight {
+  text-align: right;
 }
 
-.hidden {opacity: 0; }
-.visible {animation-name: anim1; animation-duration: 2s; }
-@keyframes anim1 { 0% {opacity: 100%;} 100% {opacity: 0;}} */
+
 
 
 /* Desktop Layout */
