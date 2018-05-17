@@ -342,6 +342,12 @@ a {
 
 .textRight {
   text-align: right;
+  float:right; 
+  width: 65%;
+}
+
+.textLeft {
+  width: 65%;
 }
 
 .gridR {
@@ -377,7 +383,6 @@ a {
   #nav {
     margin: 0 -20px 0px -20px;
     padding: 0 20px 0 20px;
-
   }
 
   .box3, .box6, .box9 {
@@ -389,16 +394,17 @@ a {
 @media screen and (max-width: 640px) {
   .wrapper{
     grid-auto-rows: 60px minmax(100px, auto);
-  }
+    grid-gap:20px;
 
-  /* #nav {
-    margin: 0 -20px 0px -20px;
-  } */
+  }
 
   .box3, .box6, .box9 {
     margin: 10px 20px 10px 20px;
   }
 
+  .box9 {
+    margin: 50px 20px; 
+  }
   .dropdown {
     visibility: visible;
   }
