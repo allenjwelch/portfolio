@@ -14,8 +14,9 @@ font-family: 'Luckiest Guy', cursive; */
   display:grid;
   grid-template-columns:repeat(4, 1fr);
   grid-auto-rows:70px minmax(200px, auto);
-  grid-gap:15px;
+  grid-gap:10px;
   margin: 0 120px 0 120px; 
+  position:relative; 
 }
 
 .header {
@@ -42,7 +43,7 @@ font-family: 'Luckiest Guy', cursive; */
 }
 
 .parallax { 
-  background-image: url("assets/imgs/code.jpg");
+  background-image: url("./imgs/code.jpg");
   background-attachment: fixed;
   top: 0; 
   right: 0; 
@@ -51,24 +52,49 @@ font-family: 'Luckiest Guy', cursive; */
   background-size: cover;
   z-index: 1;
   display: grid; 
-  grid-template-columns:1fr 4fr 1fr;
-  grid-auto-rows:minmax(200px, auto);
-}
+  grid-template-columns:1fr 8fr 1fr;
+  grid-auto-rows:minmax(200px, 200px);
+  overflow: hidden;
 
-/* #parallaxImg {
-  background-image: url("assets/imgs/code5.jpg");
-} */
+}
 
 .main {
   grid-column: 2; 
-  align-self: center;
+  /* align-self: center; */
   justify-self: center;
-  height: 400px;
+  margin: 20px -20px 0 -20px; 
+  height: auto;
   width: auto;
-  background-color: blue; 
-  opacity: .5; 
+  padding: 10px;
+  border-radius: 0 20px 0 20px;  
+  background-color: rgba(0, 0, 255, 0.685); 
   overflow: hidden;
 }
+
+
+#profileImg {
+  grid-column: 2; 
+  margin-top: 50px;
+  align-self: center;
+  justify-self: center;
+  border-radius: 30px; 
+  height: 150px;
+  width: auto;
+  box-shadow: 5px 5px 10px #888888;
+}
+
+.connectImages {
+  justify-self: center;
+  padding: 10px;
+}
+
+.connect_img {
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  border-radius:30%; 
+  }
+
 
 /* .main div {
   background-color: blue; 
@@ -235,13 +261,14 @@ li a:hover {
 .dropbtn {
   /* background-color: #4aaaa5; */
   color: white;
-  padding: 21px 16px;
-  font-size: 16px;
+  vertical-align: middle; 
+  padding: auto auto;
+  font-size: 10px;
   border: none;
   cursor: pointer;
   width: 60px;
-  /* height: 60px;
-  width: 100px;  */
+  height: 16px;
+  /*width: 100px;  */
   /* font-size: 18px;  */
 }
 
@@ -249,6 +276,7 @@ li a:hover {
   position: absolute;
   top: 0;
   right: 20px;
+  height: 68px;
   display: inline-block;
   visibility: hidden;
 }
@@ -316,50 +344,50 @@ a {
 
 /* BOX IMAGES AND ANIMATIONS */
 .b1Image {
-  background-image:url('assets/imgs/tape1.jpg');
+  background-image:url('./imgs/tape1.jpg');
 }
 
 .b2Image {
-  background-image:url('assets/imgs/RobotWars.PNG');
+  background-image:url('./imgs/RobotWars.PNG');
 }
 
 .b3Image {
-  background-image:url('assets/imgs/trivia.PNG');
+  background-image:url('./imgs/trivia.PNG');
   border-radius: 100%; 
 }
 
 .b4Image {
-  background-image:url('assets/imgs/liri.PNG');
+  background-image:url('./imgs/liri.PNG');
 }
 
 .b5Image {
-  background-image:url('assets/imgs/GiphyAPI.PNG');
+  background-image:url('./imgs/GiphyAPI.PNG');
 }
 
 .b6Image {
-  /* background-image:url('assets/imgs/trainlogo.jpg');
+  /* background-image:url('./imgs/trainlogo.jpg');
   border-radius: 100%;  */
 }
 
 .b7Image {
-  background-image:url('assets/imgs/friendFinder.PNG');
+  background-image:url('./imgs/friendFinder.PNG');
 }
 
 .b8Image {
-  background-image:url('assets/imgs/Bamazon.PNG');
+  background-image:url('./imgs/Bamazon.PNG');
 }
 
 .b9Image {
-  background-image:url('assets/imgs/trainlogo.jpg');
+  background-image:url('./imgs/trainlogo.jpg');
   border-radius: 100%; 
 }
 
 .b10Image {
-  background-image:url('assets/imgs/emberTasks.PNG');
+  background-image:url('./imgs/emberTasks.PNG');
 }
 
 .b11Image {
-  background-image:url('assets/imgs/#');
+  background-image:url('./imgs/#');
 }
 
 .overlay {
@@ -453,7 +481,7 @@ a {
 
   #nav {
     margin: 0 -50px 0px -50px;
-    padding: 0 50px 0 50px;
+    padding: 0 40px 0 40px;
   }
 
   .about, .projectTitle, .contact, .footer {
@@ -474,7 +502,7 @@ a {
 
   #nav {
     margin: 0 -20px 0px -20px;
-    padding: 0 20px 0 20px;
+    padding: 0 -40px 0 40px;
   }
 
   .about, .projectTitle, .contact, .footer {
@@ -492,11 +520,15 @@ a {
   .wrapper{
     grid-auto-rows: 60px minmax(100px, 150px);
     grid-gap:20px;
-
   }
 
   .box3, .box9 {
     margin: 10px 20px 10px 20px;
+  }
+
+  #nav {
+    margin: 0 -20px 0px -20px;
+    padding: 0;
   }
 /* 
   .box9 {
