@@ -13,7 +13,7 @@ font-family: 'Luckiest Guy', cursive; */
 .wrapper{
   display:grid;
   grid-template-columns:repeat(4, 1fr);
-  grid-auto-rows:70px minmax(200px, auto);
+  grid-auto-rows:70px minmax(200px, auto) ;
   grid-gap:10px;
   margin: 0 120px 0 120px; 
   position:relative; 
@@ -84,8 +84,10 @@ font-family: 'Luckiest Guy', cursive; */
 }
 
 .connectImages {
+  grid-column:4;
   justify-self: center;
   padding: 10px;
+  display:block; 
 }
 
 .connect_img {
@@ -119,22 +121,24 @@ font-family: 'Luckiest Guy', cursive; */
 
 .contact {
   grid-column: 1/-1; 
-  grid-row: 15/18; 
+  grid-row: 15/17; 
   background: rgb(0, 204, 255); 
   margin: 0 -120px 0 -120px;
   display: inline-grid; 
-  padding: 10%;
+  min-height: 220px;
+  padding: 10px;
   justify-items: center; 
 }
 
 .footer {
   grid-column: 1/-1; 
-  grid-row: 18; 
+  grid-row: 17; 
   background: rgb(0, 255, 136); 
   margin: 0 -120px 0 -120px;
-  display: inline-grid; 
-  padding: 10%;
-  justify-items: center; 
+  height: 20px;
+  /* display: inline-grid;  */
+  /* padding: 10%; */
+  align-self: end;
 }
 
 .box1 {
