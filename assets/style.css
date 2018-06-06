@@ -36,6 +36,11 @@ font-family: 'Ubuntu', sans-serif;*/
   font-size: 35px; 
 }
 
+#nav li {
+  font-size: 20px; 
+
+}
+
 .box {
   position: relative;
   padding: 10px;
@@ -223,17 +228,26 @@ input[type="text"]:hover, input[type="email"]:hover, select:hover, textarea:hove
   margin-top: 40px;
   font-size: 52px; 
   text-align: center; 
+}
+
+.box .connectImages h1 {
   font-family: 'Kaushan Script', cursive;
 }
 
 .connect_img {
   height: 80px;
   width: 80px;
-  padding: 10px;
+  /* padding: 10px; */
   margin: 20px 10px;
+  border: none; 
   border-radius:30%; 
   box-shadow: 5px 5px 10px #888888;
 }
+
+.box .connectImages a {
+  border: none; 
+}
+
 
 .connect_img:hover {
   box-shadow: 5px 5px 20px #dbcfcf;
@@ -434,26 +448,25 @@ a {
 }
 
 /*================ Text =====================*/
-.box {
-
+.box a {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 24px; 
+  margin-right: 10px; 
+  padding: 5px 10px;
+  border: 1px solid white; 
+  border-radius: 20px; 
 }
 
 .box h1 {
-
+  font-family: 'Skranji', cursive;
+  font-size: 42px; 
+  
 }
 
 .box p {
-
-}
-
-.box ul {
-  list-style-type: circle;
-  /* display: block;  */
-  background-color: rgba(71, 71, 71, 0);
-}
-
-.box li {
-  float: none; 
+  font-family: 'Ubuntu', sans-serif;
+  margin: 5px 0;
+  font-size: 20px; 
 }
 
 .textCenter {
@@ -462,54 +475,56 @@ a {
   left: 50%;
   transform: translate(-50%, -50%); */
   text-align: center;
-  padding: 0 10px;
+  padding: 25px 20px;
+}
+
+.textCenter h1 {
+  font-size: 32px; 
+}
+
+.textCenter p {
+  font-size: 18px; 
+}
+
+.textCenter a {
+  font-size: 16px; 
+  padding: 2px 5px;
+
 }
 
 .textRight {
   text-align: right;
   float:right; 
-  width: 70%;
+  width: 65%;
+  margin: 10px; 
+
 }
 
 .textLeft {
-  width: 70%;
-}
-
-/* LEFT */
-#box1, #box4, #box7, #box10 {
-
-}
-
-/* RIGHT */
-#box2, #box5, #box8, #box11 {
-  
-}
-
-/* CENTER */
-#box3, #box9 {
-  
+  width: 65%;
+  margin: 10px; 
 }
 
 
 /*================ Color =====================*/
 #box1, #box5, #box10{
-  background-color: #008CBA;
+  background-color: rgb(3, 109, 145);
 }
 
-#box2 {
-  background-color: rgb(179, 218, 42);
+#box9 {
+  background-color: rgb(152, 184, 36);
 }
 
 #box3, #box7{
-  background-color: rgb(199, 27, 170);
+  background-color: rgb(173, 24, 148);
 }
 
 #box4, #box8{
-  background-color: rgb(21, 196, 45);
+  background-color: rgb(16, 151, 34);
 }
 
-#box11, #box9{
-  background-color: rgb(223, 82, 17);
+#box11, #box2{
+  background-color: rgb(177, 65, 13);
 }
 
 /*================ BOX IMAGES AND ANIMATIONS =====================*/
@@ -686,10 +701,53 @@ a {
   .connect_img {
     height: 60px;
     width: 60px;
-    padding: 5px;
+    /* padding: 5px; */
   }
 
-  
+    /*================ Text =====================*/
+  .box a {
+    font-size: 16px; 
+    margin-right: 10px; 
+    padding: 5px 5px;
+    border: 1px solid white; 
+    border-radius: 18px; 
+  }
+
+  .box h1 {
+    font-size: 28px; 
+  }
+
+  .box p {
+    margin: 5px 0;
+    font-size: 14px; 
+  }
+
+  .textCenter {
+    padding: 15px 10px;
+  }
+
+  .textCenter h1 {
+      font-size: 22px; 
+    }
+
+    .textCenter p {
+      font-size: 12px; 
+    }
+
+    .textCenter a {
+      font-size: 12px; 
+    }
+
+  .textRight {
+    width: 65%;
+    margin: 10px; 
+  }
+
+  .textLeft {
+    width: 65%;
+    margin: 10px; 
+  }
+
 }
 
 /* Tablet Layout */
@@ -754,6 +812,51 @@ a {
     padding: 0;
     margin: 0px 5px;
   }
+
+    /*================ Text =====================*/
+    .box a {
+      font-size: 14px; 
+      margin-right: 0px; 
+      padding: 5px 8px;
+      border: 1px solid white; 
+      border-radius: 18px; 
+    }
+  
+    .box h1 {
+      font-size: 28px; 
+    }
+  
+    .box p {
+      margin: 5px 0;
+      font-size: 14px; 
+    }
+  
+    .textCenter {
+      padding: 15px 15px;
+    }
+
+    .textCenter h1 {
+      font-size: 22px; 
+    }
+
+    .textCenter p {
+      font-size: 12px; 
+    }
+
+    .textCenter a {
+      font-size: 12px; 
+    }
+  
+    .textRight {
+      width: 70%;
+      margin: 10px; 
+    }
+  
+    .textLeft {
+      width: 70%;
+      margin: 10px; 
+    }
+  
 
 }
 
@@ -825,6 +928,50 @@ a {
     width: 300px;
     margin: 5px 0;
     padding: 5px 5px;
+  }
+
+  /*================ Text =====================*/
+  .box a {
+    font-size: 12px; 
+    margin-right: 0; 
+    padding: 5px 8px;
+    border: 1px solid white; 
+    border-radius: 18px; 
+  }
+
+  .box h1 {
+    font-size: 18px; 
+  }
+
+  .box p {
+    margin: 5px 0;
+    font-size: 13px; 
+  }
+
+  .textCenter {
+    padding: 15px 10px;
+  }
+
+  .textRight {
+    width: 70%;
+    margin: 10px; 
+  }
+
+  .textLeft {
+    width: 70%;
+    margin: 10px; 
+  }
+
+  .textCenter h1 {
+    font-size: 20px; 
+  }
+
+  .textCenter p {
+    font-size: 12px; 
+  }
+
+  .textCenter a {
+    font-size: 12px; 
   }
 
 }
