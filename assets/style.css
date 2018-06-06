@@ -154,7 +154,7 @@ font-family: 'Ubuntu', sans-serif;*/
 
 form {
   grid-column: 1; 
-  width: 500px; 
+  width: 550px; 
   padding: 20px; 
   padding-bottom: 0;
   margin: 10px 0 0 -10px; 
@@ -165,7 +165,7 @@ input[type="text"], input[type="email"], select {
   grid-column: 1; 
   border-radius: 10px; 
   /* no spaces in input[type="text"] */
-  width: 500px;
+  width: 550px;
   padding: 10px; 
   margin: 5px auto;	
   border: none;
@@ -180,7 +180,7 @@ input[type="text"], input[type="email"], select {
 textarea {
   grid-column: 2; 
   border-radius: 10px; 
-  width: 500px;
+  width: 550px;
   height: 90px;
   padding: 10px; 
   margin: 5px auto;	
@@ -209,6 +209,8 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: darkred; 
   border: 2px solid rgb(109, 1, 1); 
+  box-shadow: 5px 5px 20px #dbcfcf;
+
 }
 
 input[type="text"]:focus, input[type="email"]:focus, select:focus, textarea:focus {
@@ -240,7 +242,7 @@ input[type="text"]:hover, input[type="email"]:hover, select:hover, textarea:hove
   height: 80px;
   width: 80px;
   /* padding: 10px; */
-  margin: 20px 10px;
+  margin: 20px 3px;
   border: none; 
   border-radius:30%; 
   box-shadow: 5px 5px 10px #888888;
@@ -464,6 +466,14 @@ a {
   margin-right: 10px; 
   border: 1px solid white; 
   border-radius: 20px; 
+}
+
+.box .textRight a:hover {
+  box-shadow: 5px 5px 20px #dbcfcf;
+}
+
+.box .textLeft a:hover {
+  box-shadow: 5px 5px 20px #dbcfcf;
 }
 
 .box h1 {
