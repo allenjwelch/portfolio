@@ -89,10 +89,6 @@ font-family: 'Ubuntu', sans-serif;*/
   text-align: center; 
 }
 
-.text {
-  /* padding: 5%; */
-}
-
 #profileImg {
   grid-column: 2; 
   margin:100px 0 10px 0;
@@ -431,12 +427,71 @@ li a:hover {
   right: 0;
 }
 
-/* ============================ Portfolio Style ======================*/
+/* ===================================== Portfolio Style ===================================== */
 a {
   color: white; 
   text-decoration: none; 
 }
 
+/*================ Text =====================*/
+.box {
+
+}
+
+.box h1 {
+
+}
+
+.box p {
+
+}
+
+.box ul {
+  list-style-type: circle;
+  /* display: block;  */
+  background-color: rgba(71, 71, 71, 0);
+}
+
+.box li {
+  float: none; 
+}
+
+.textCenter {
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  text-align: center;
+  padding: 0 10px;
+}
+
+.textRight {
+  text-align: right;
+  float:right; 
+  width: 70%;
+}
+
+.textLeft {
+  width: 70%;
+}
+
+/* LEFT */
+#box1, #box4, #box7, #box10 {
+
+}
+
+/* RIGHT */
+#box2, #box5, #box8, #box11 {
+  
+}
+
+/* CENTER */
+#box3, #box9 {
+  
+}
+
+
+/*================ Color =====================*/
 #box1, #box5, #box10{
   background-color: #008CBA;
 }
@@ -457,7 +512,7 @@ a {
   background-color: rgb(223, 82, 17);
 }
 
-/* BOX IMAGES AND ANIMATIONS */
+/*================ BOX IMAGES AND ANIMATIONS =====================*/
 .b1Image {
   background-image:url('./imgs/mxtp.PNG');
 }
@@ -563,29 +618,10 @@ a {
   transform: translateX(700px)
 }
 
-
-.textCenter {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.textRight {
-  text-align: right;
-  float:right; 
-  width: 65%;
-}
-
-.textLeft {
-  width: 65%;
-}
-
-.gridR {
+/* .gridR {
   display:grid; 
   grid-template-columns: 1fr 8fr;
-}
+} */
 
 /* ============================================ Media Queries ============================= */
 /* Desktop Layout */
@@ -762,9 +798,16 @@ a {
     margin-left: 150px;
   }
 
+  #profileImg {
+    margin:60px 0 10px 0;
+    height: 150px;
+    width: auto;
+  }
   .main {
-    margin: 80px -20px -40px -20px; 
+    margin: 50px -20px -40px -20px; 
     font-size: 14px; 
+    padding: 10px -20px; 
+    overflow: auto;
   }
 
   /* input[type="text"], input[type="email"], select {
