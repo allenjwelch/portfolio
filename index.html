@@ -13,6 +13,14 @@
   <link rel="stylesheet" href="./assets/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Jua|Ubuntu|Kaushan+Script|Luckiest+Guy|Pacifico|Satisfy|Skranji" rel="stylesheet">
+  <!-- <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.1.0/email.min.js"></script> -->
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+   (function(){
+      emailjs.init("user_11WHsfD7vGZzuQnVR4wbU");
+   })();
+  </script>
+  <script src="./assets/js/app.js"></script>
 </head>
 <body>
   
@@ -173,10 +181,10 @@
 
     <div class="box contact" id='contact'>
       <!-- <div class="contactGrid"> -->
-        <form>
+        <form id='contact-form'>
           <input type="text" name="name" placeholder="Name">
           <input type="email" name="email" placeholder="Email">
-          <textarea placeholder="Leave me a message!"></textarea>
+          <textarea name='message' placeholder="Leave me a message!"></textarea>
           <button type="submit" value="Submit" name="submit">Send!</button>
         </form>
     
