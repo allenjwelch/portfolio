@@ -3,7 +3,9 @@ font-family: 'Pacifico', cursive;
 font-family: 'Kaushan Script', cursive;
 font-family: 'Skranji', cursive;
 font-family: 'Satisfy', cursive;
-font-family: 'Luckiest Guy', cursive; */
+font-family: 'Luckiest Guy', cursive; 
+font-family: 'Jua', sans-serif;
+font-family: 'Ubuntu', sans-serif;*/
 
 * {
   padding: 0;
@@ -70,14 +72,25 @@ font-family: 'Luckiest Guy', cursive; */
   margin: 80px -20px -80px -20px; 
   height: auto;
   width: auto;
-  padding: 10px;
-  border-radius: 0 20px 0 20px;  
-  background-color: rgba(89, 96, 128, 0.719);
+  padding: 25px 15px;
+  border-radius: 20px;  
+  /* background-color: rgba(89, 96, 128, 0.719); */
+  background: linear-gradient(140deg, rgba(71, 71, 71, 0.90), rgba(81, 87, 117, 0.90) );
+
   color: rgb(222, 222, 238);  
   overflow: hidden;
   font-size: 24px; 
-  font-family: 'Skranji', cursive;
+  /* font-family: 'Skranji', cursive; */
+  /* font-family: 'Indie Flower', cursive; */
+  /* font-family: 'Pacifico', cursive; */
+  /* font-family: 'Kaushan Script', cursive; */
+  /* font-family: 'Jua', sans-serif; */
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center; 
+}
 
+.text {
+  /* padding: 5%; */
 }
 
 #profileImg {
@@ -100,20 +113,21 @@ font-family: 'Luckiest Guy', cursive; */
 /* ============================ Project Title ======================*/
 .projectTitle {
   grid-column: 1/-1; 
-  grid-row: 6/7; 
-  background: linear-gradient(140deg, rgb(71, 71, 71), rgb(149, 161, 216) );
+  grid-row: 6; 
+  background: linear-gradient(140deg, rgb(71, 71, 71), rgb(128, 138, 184) );
   /* border-top: 30px solid rgb(71, 71, 71); */
   /* background:rgb(71, 71, 71); */
   margin: 0 -120px 0 -120px;
   display: inline-grid; 
-  padding: 8%;
+  padding: 12px;
   justify-items: center; 
   font-family: 'Luckiest Guy', cursive;
   font-size: 72px; 
+  color: rgb(238, 237, 237);
 }
 
 #quote {
-  font-size: 32px; 
+  font-size: 28px; 
   font-family: 'Satisfy', cursive;
   padding: 8px;
 }
@@ -121,14 +135,14 @@ font-family: 'Luckiest Guy', cursive; */
 #author {
   font-size: 32px; 
   font-family: 'Satisfy', cursive;
-  margin-left: 200px;
+  margin-left: 300px;
 }
 
 /* ============================ Contact & Footer ======================*/
 .contact {
   grid-column: 1/-1; 
   grid-row: 15/17; 
-  background: linear-gradient(-40deg, rgb(71, 71, 71), rgb(149, 161, 216) );
+  background: linear-gradient(-40deg, rgb(71, 71, 71), rgb(128, 138, 184) );
   margin: 0 -120px -30px -120px;
   display: inline-grid; 
   /* min-height: 150px; */
@@ -159,14 +173,13 @@ input[type="text"], input[type="email"], select {
   outline: none;
   background: #f1f1f1; 
   font-family: 'Skranji', cursive;
-
-  }
+}
 
 textarea {
   grid-column: 2; 
   border-radius: 10px; 
   width: 500px;
-  height: 100px;
+  height: 90px;
   padding: 10px; 
   margin: 5px auto;	
 	display: block; 
@@ -214,17 +227,12 @@ input[type="text"]:hover, input[type="email"]:hover, select:hover, textarea:hove
   margin-top: 40px;
   font-size: 52px; 
   text-align: center; 
-  /* font-family: 'Indie Flower', cursive; */
-  /* font-family: 'Pacifico', cursive; */
   font-family: 'Kaushan Script', cursive;
-  /*font-family: 'Skranji', cursive;
-  font-family: 'Satisfy', cursive;
-  font-family: 'Luckiest Guy', cursive; */
 }
 
 .connect_img {
-  height: 120px;
-  width: 120px;
+  height: 80px;
+  width: 80px;
   padding: 10px;
   margin: 20px 10px;
   border-radius:30%; 
@@ -579,6 +587,7 @@ a {
   grid-template-columns: 1fr 8fr;
 }
 
+/* ============================================ Media Queries ============================= */
 /* Desktop Layout */
 @media screen and (max-width: 980px) {
   .wrapper{
@@ -615,10 +624,33 @@ a {
 
   .main {
     font-size: 22px; 
+    padding: 15px; 
   }
 
   .contact {
   margin-bottom: -30px;
+  }
+
+  form {
+    margin: 10px 0 0 -10px; 
+  } 
+  
+  form, textarea, input[type="text"], input[type="email"], select {
+    width: 400px;
+  }
+
+  textarea {
+    height: 70px;
+  }
+
+  .connectImages h1 {
+    font-size: 36px; 
+  }
+  
+  .connect_img {
+    height: 60px;
+    width: 60px;
+    padding: 5px;
   }
 
   
@@ -646,11 +678,46 @@ a {
 
   .main {
     font-size: 18px; 
+    padding: 20px; 
   }
 
   .contact {
     margin-bottom: -30px;
-    }
+  }
+
+  form {
+    margin: 0px 0 0 0; 
+  } 
+  
+  form, textarea, input[type="text"], input[type="email"], select {
+    width: 400px;
+  }
+
+  textarea {
+    height: 30px;
+  }
+
+  button[type="submit"] {
+    padding: 5px 0;
+  }
+
+  .connectImages {
+    grid-column: 1; 
+    padding: 0;
+    margin: -70px 0;
+  }
+
+  .connectImages h1 {
+    visibility: hidden; 
+    font-size: 16px; 
+  }
+  
+  .connect_img {
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    margin: 0px 5px;
+  }
 
 }
 
@@ -698,6 +765,23 @@ a {
   .main {
     margin: 80px -20px -40px -20px; 
     font-size: 14px; 
+  }
+
+  /* input[type="text"], input[type="email"], select {
+    margin: 5px 0;
+    padding: 3px 5px;
+  } */
+
+  button[type="submit"] {
+    padding: 0;
+    width: 100px;
+    margin-bottom: 0;
+  }
+
+  form, textarea, input[type="text"], input[type="email"], select {
+    width: 300px;
+    margin: 5px 0;
+    padding: 5px 5px;
   }
 
 }
