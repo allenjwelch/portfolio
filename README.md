@@ -5,7 +5,7 @@ A snapshot of myself as a developer with a collection of my most recent projects
 #### Deployed: https://allenjwelch.github.io/portfolio/
 
 ## Build Status
-![Wercker](https://img.shields.io/travis/USER/REPO.svg)
+![Wercker](https://img.shields.io/teamcity/codebetter/bt428.svg)
 
 ## Built Using:
 * HTML5
