@@ -37,7 +37,7 @@ font-family: 'Ubuntu', sans-serif;*/
 }
 
 #nav li {
-  font-size: 20px; 
+  font-size: 18px; 
 
 }
 
@@ -73,10 +73,10 @@ font-family: 'Ubuntu', sans-serif;*/
 .main {
   grid-column: 2; 
   justify-self: center;
-  margin: 80px -20px -80px -20px; 
-  height: auto;
+  margin: 80px -20px -130px -20px; 
+  max-height: 400px;
   width: auto;
-  padding: 25px 15px;
+  padding: 10px 15px;
   border-radius: 20px;  
   /* background-color: rgba(89, 96, 128, 0.719); */
   background: linear-gradient(140deg, rgba(71, 71, 71, 0.90), rgba(81, 87, 117, 0.90) );
@@ -96,6 +96,16 @@ font-family: 'Ubuntu', sans-serif;*/
   height: 200px;
   width: auto;
   box-shadow: 5px 5px 10px #888888;
+}
+
+.skillBadges {
+  margin-top: 15px; 
+}
+
+.badge {
+  border-radius: 10px; 
+  height: 50px;
+  width: 50px;
 }
 
 /* ============================ Project Title ======================*/
@@ -665,6 +675,11 @@ a {
     padding: 15px; 
   }
 
+  .badge { 
+    height: 35px;
+    width: 35px;
+  }
+
   .contact {
   margin-bottom: -30px;
   }
@@ -762,6 +777,11 @@ a {
   .main {
     font-size: 18px; 
     padding: 20px; 
+  }
+
+  .badge { 
+    height: 30px;
+    width: 30px;
   }
 
   .contact {
@@ -876,6 +896,15 @@ a {
     font-size: 14px; 
     padding: 10px -20px; 
     overflow: auto;
+  }
+
+  .skillBadges {
+    margin-top: 10px; 
+  }
+
+  .badge { 
+    height: 25px;
+    width: 25px;
   }
 
   /* input[type="text"], input[type="email"], select {
