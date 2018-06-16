@@ -591,11 +591,11 @@ a {
 }
 
 .box1:hover .overlay {
-  transform: translateX(-750px); 
+  transform: translateX(-900px); 
 }
 
 .box2:hover .overlay {
-  transform: translateX(750px); 
+  transform: translateX(900px); 
 }
 
 /* .box3:hover .overlay {
@@ -603,11 +603,11 @@ a {
 } */
 
 .box4:hover .overlay {
-  transform: translateX(-750px)
+  transform: translateX(-900px)
 }
 
 .box5:hover .overlay {
-  transform: translateX(750px)
+  transform: translateX(900px)
 }
 
 /* .box6:hover .overlay {
@@ -616,11 +616,11 @@ a {
 } */
 
 .box7:hover .overlay {
-  transform: translateX(-750px)
+  transform: translateX(-900px)
 }
 
 .box8:hover .overlay {
-  transform: translateX(750px)
+  transform: translateX(900px)
 }
 
 /* .box9:hover .overlay {
@@ -628,11 +628,11 @@ a {
 } */
 
 .box10:hover .overlay {
-  transform: translateX(-750px)
+  transform: translateX(-900px)
 }
 
 .box11:hover .overlay {
-  transform: translateX(750px)
+  transform: translateX(900px)
 }
 
 /* .gridR {
