@@ -517,7 +517,11 @@ a {
 
 }
 
-#box4, #box8{
+#box4 {
+  background: linear-gradient(135deg, rgb(231, 170, 3), rgb(151, 111, 2));
+} 
+
+#box8{
   /* background-color: rgb(16, 151, 34); */
   background: linear-gradient(135deg, rgb(21, 187, 44), rgb(8, 85, 19));
 
@@ -544,7 +548,7 @@ a {
 } */
 
 .b4Image {
-  background-image:url('./imgs/liri.PNG');
+  background-image:url('./imgs/cicerowned.PNG');
 }
 
 .b5Image {
