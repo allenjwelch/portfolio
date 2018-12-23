@@ -10,6 +10,14 @@ window.onload = function() {
 }
 
 // Scroll Animation
-// $('#viewDesc').click(function() {
-//     $('html,body').animate({scrollTop: desc.offset().top -30 },'slow');
-// })
+$('.contactLink').click(function() {
+    $('html,body').animate({scrollTop: $('#contact').offset().top -30 },'slow');
+})
+
+$('.aboutLink').click(function() {
+    $('html,body').animate({scrollTop: $('.about').offset().top -1 },'slow');
+})
+
+$('.portfolioLink').click(function() {
+    $('html,body').animate({scrollTop: $('.projectTitle').offset().top -1 },'slow');
+})
