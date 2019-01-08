@@ -78,7 +78,7 @@ font-family: 'Ubuntu', sans-serif;*/
   max-width: 980px;
   width: auto;
   padding: 10px 15px;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   /* background-color: rgba(89, 96, 128, 0.719); */
   background-color:  rgba(71, 71, 71, 0.90);
   /* background: linear-gradient(140deg, rgba(71, 71, 71, 0.90), rgba(81, 87, 117, 0.90) ); */
@@ -102,7 +102,7 @@ font-family: 'Ubuntu', sans-serif;*/
 }
 
 .skillBadges {
-  margin-top: 15px;
+  margin-top: 35px;
   /* position: absolute;
   bottom: 10px;
   left: 5%;
@@ -147,28 +147,35 @@ font-family: 'Ubuntu', sans-serif;*/
 .contact {
   /* grid-column: 1/-1;
   grid-row: 15/17; */
-  background: linear-gradient(-40deg, rgb(71, 71, 71), rgb(128, 138, 184) );
+  /* background: linear-gradient(-40deg, rgb(71, 71, 71), rgb(128, 138, 184) ); */
+  background:  rgb(71, 71, 71);
   /* margin: 0 -120px -30px -120px; */
   width: 100%;
-  display: inline-grid;
+  /* display: inline-grid; */
   padding: 10px 0 30px 0;
-  justify-items: center;
-
+  /* justify-items: center; */
 }
 
-form {
+#contact-form > .col {
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px; 
+}
+
+#contact-form {
   /* grid-column: 1; */
-  width: 550px;
-  padding: 20px;
-  padding-bottom: 0;
-  margin: 10px 0 0 -10px;
-  text-align:center;
+  width: 90%;
+  padding: 0px;
+  /* padding-bottom: 0; */
+  margin: 10px auto;
+  text-align: center;
 }
 
 input[type="text"], input[type="email"], select {
   /* grid-column: 1; */
-  border-radius: 10px;
-  width: 550px;
+  /* border-radius: 10px; */
+  width: 100%;
   padding: 10px;
   margin: 5px auto;
   border: none;
@@ -181,9 +188,9 @@ input[type="text"], input[type="email"], select {
 
 textarea {
   /* grid-column: 2; */
-  border-radius: 10px;
-  width: 550px;
-  height: 90px;
+  /* border-radius: 10px; */
+  width: 100%;
+  height: 150px;
   padding: 10px;
   margin: 5px auto;
 	display: block;
@@ -200,9 +207,9 @@ button[type="submit"] {
   background-color: brown;
   color: white;
   font-size: 20px;
-  width: 200px;
+  width: 80%;
   padding: 10px 0;
-  margin-top: 10px;
+  margin: 10px auto 0; 
   border-radius: 20px;
   outline: none;
   font-family: 'Luckiest Guy', cursive;
