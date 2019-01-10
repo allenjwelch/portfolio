@@ -14,10 +14,11 @@ font-family: 'Ubuntu', sans-serif;*/
 
 .wrapper{
   display:grid;
-  grid-template-columns:repeat(4, 1fr);
-  grid-auto-rows:70px minmax(200px, auto) ;
+  grid-template-columns:repeat(2, 1fr);
+  grid-auto-rows: 280px;
   grid-gap:10px;
-  margin: 0 120px 0 120px;
+  max-width: 90%;
+  margin: 0 auto;
   position:relative;
 }
 
@@ -57,30 +58,31 @@ font-family: 'Ubuntu', sans-serif;*/
 .parallax {
   background-image: url("./imgs/code.jpg");
   background-attachment: fixed;
-  top: 0;
-  right: 0;
+  /* top: 0; */
+  /* right: 0; */
   width: 100%;
   height: 560px;
   background-size: cover;
   z-index: 1;
-  display: grid;
-  grid-template-columns:1fr 8fr 1fr;
-  grid-auto-rows:minmax(200px, 200px);
+  /* display: grid; */
+  /* grid-template-columns:1fr 8fr 1fr; */
+  /* grid-auto-rows:minmax(200px, 200px); */
   overflow: hidden;
-
+  text-align: center;
 }
 
 .main {
-  grid-column: 2;
-  justify-self: center;
-  margin: 80px -20px -130px -20px;
+  /* grid-column: 2; */
+  /* justify-self: center; */
+  margin: 10px auto;
   max-height: 400px;
-  max-width: 940px;
+  max-width: 980px;
   width: auto;
   padding: 10px 15px;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   /* background-color: rgba(89, 96, 128, 0.719); */
-  background: linear-gradient(140deg, rgba(71, 71, 71, 0.90), rgba(81, 87, 117, 0.90) );
+  background-color:  rgba(71, 71, 71, 0.90);
+  /* background: linear-gradient(140deg, rgba(71, 71, 71, 0.90), rgba(81, 87, 117, 0.90) ); */
   color: rgb(222, 222, 238);
   overflow: hidden;
   font-size: 24px;
@@ -90,10 +92,10 @@ font-family: 'Ubuntu', sans-serif;*/
 }
 
 #profileImg {
-  grid-column: 2;
-  margin:100px 0 10px 0;
-  align-self: center;
-  justify-self: center;
+  /* grid-column: 2; */
+  margin: 100px auto 10px;
+  /* align-self: center; */
+  /* justify-self: center; */
   border-radius: 30px;
   height: 200px;
   width: auto;
@@ -101,11 +103,12 @@ font-family: 'Ubuntu', sans-serif;*/
 }
 
 .skillBadges {
-  margin-top: 15px;
-  position: absolute;
+  margin-top: 35px;
+  /* position: absolute;
   bottom: 10px;
   left: 5%;
-  right: 5%;
+  right: 5%; */
+  display: inline-block;
 }
 
 .badge {
@@ -118,8 +121,9 @@ font-family: 'Ubuntu', sans-serif;*/
 .projectTitle {
   /* grid-column: 1/-1; */
   /* grid-row: 6; */
-  background: linear-gradient(140deg, rgb(71, 71, 71), rgb(128, 138, 184) );
+  /* background: linear-gradient(140deg, rgb(71, 71, 71), rgb(128, 138, 184) ); */
   /* margin: 0 -120px 0 -120px; */
+  background: #333;
   width: 100%;
   display: inline-grid;
   padding: 12px 0;
@@ -145,28 +149,36 @@ font-family: 'Ubuntu', sans-serif;*/
 .contact {
   /* grid-column: 1/-1;
   grid-row: 15/17; */
-  background: linear-gradient(-40deg, rgb(71, 71, 71), rgb(128, 138, 184) );
+  /* background: linear-gradient(-40deg, rgb(71, 71, 71), rgb(128, 138, 184) ); */
+  background: #333;
   /* margin: 0 -120px -30px -120px; */
   width: 100%;
-  display: inline-grid;
-  padding: 10px 0 30px 0;
-  justify-items: center;
-
+  /* height: 100%; */
+  /* display: inline-grid; */
+  padding: 10px 0 40px;
+  /* justify-items: center; */
 }
 
-form {
+#contact-form > .col {
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px;
+}
+
+#contact-form {
   /* grid-column: 1; */
-  width: 550px;
-  padding: 20px;
-  padding-bottom: 0;
-  margin: 10px 0 0 -10px;
-  text-align:center;
+  width: 90%;
+  padding: 0px;
+  /* padding-bottom: 0; */
+  margin: 10px auto;
+  text-align: center;
 }
 
 input[type="text"], input[type="email"], select {
   /* grid-column: 1; */
-  border-radius: 10px;
-  width: 550px;
+  /* border-radius: 10px; */
+  width: 100%;
   padding: 10px;
   margin: 5px auto;
   border: none;
@@ -179,9 +191,9 @@ input[type="text"], input[type="email"], select {
 
 textarea {
   /* grid-column: 2; */
-  border-radius: 10px;
-  width: 550px;
-  height: 90px;
+  /* border-radius: 10px; */
+  width: 100%;
+  height: 150px;
   padding: 10px;
   margin: 5px auto;
 	display: block;
@@ -198,9 +210,9 @@ button[type="submit"] {
   background-color: brown;
   color: white;
   font-size: 20px;
-  width: 200px;
+  width: 80%;
   padding: 10px 0;
-  margin-top: 10px;
+  margin: 10px auto 0;
   border-radius: 20px;
   outline: none;
   font-family: 'Luckiest Guy', cursive;
@@ -213,6 +225,10 @@ button[type="submit"]:hover {
 
 }
 
+button.emailSubmit.mobile {
+    display: none;
+}
+
 input[type="text"]:focus, input[type="email"]:focus, select:focus, textarea:focus {
   background-color:rgb(187, 192, 216)
 }
@@ -223,9 +239,10 @@ input[type="text"]:hover, input[type="email"]:hover, select:hover, textarea:hove
 
 .connectImages {
   /* grid-column: 2; */
-  justify-self: center;
+  /* justify-self: center; */
   padding: 10px;
   display:block;
+  text-align: center;
 }
 
 .connectImages h1 {
@@ -238,19 +255,17 @@ input[type="text"]:hover, input[type="email"]:hover, select:hover, textarea:hove
   font-family: 'Kaushan Script', cursive;
 }
 
-.connect_img {
-  height: 80px;
-  width: 80px;
+/* .connect_img {
+  height: 60px;
+  width: 60px;
   /* padding: 10px; */
-  margin: 20px 3px;
+  margin: 20px 0px 5px;
   border: none;
   border-radius:30%;
   box-shadow: 5px 5px 10px #888888;
-}
+} */
 
-.box .connectImages a {
-  border: none;
-}
+
 
 .connect_img:hover {
   box-shadow: 5px 5px 20px #dbcfcf;
@@ -262,9 +277,16 @@ input[type="text"]:hover, input[type="email"]:hover, select:hover, textarea:hove
   background: rgb(71, 71, 71);
   font-family: 'Kaushan Script', cursive;
   /* margin: 0 -120px 0 -120px; */
-  height: 20px;
+  height: 30px;
   align-self: end;
 }
+
+#copyright {
+    display: inline-block;
+    padding: 6px;
+}
+
+
 
 /* ============================ Grid Layout ======================*/
 .projectPanels {
@@ -274,15 +296,15 @@ input[type="text"]:hover, input[type="email"]:hover, select:hover, textarea:hove
 }
 
 .box1 {
-  grid-column: 1/3;
-  grid-row: 1/3;
+  grid-column: 1;
+  grid-row: 1;
   border-top-left-radius: 10%;
   border-bottom-right-radius: 10%;
 }
 
 .box2 {
-  grid-column: 3/5;
-  grid-row: 1/3;
+  grid-column: 2;
+  grid-row: 1;
   border-top-right-radius: 10%;
   border-bottom-left-radius: 10%;
 }
@@ -293,54 +315,52 @@ input[type="text"]:hover, input[type="email"]:hover, select:hover, textarea:hove
 } */
 
 .box4 {
-  grid-column: 1/3;
-  grid-row:3/5;
+  grid-column: 1;
+  grid-row:2;
   border-top-right-radius: 10%;
   border-bottom-right-radius: 10%;
 }
 
 .box5 {
-  grid-column:3/5;
-  grid-row:3/5;
+  grid-column:2;
+  grid-row:2;
   border-top-left-radius: 10%;
   border-bottom-left-radius: 10%;
 }
 
-.box6 {
-  grid-column:1/-1;
-  /* grid-row:10/12; */
+/* .box6 {
+  grid-column: 1/-1;
   z-index: -1;
-}
+} */
 
 .box7 {
-  grid-column: 1/3;
-  grid-row:5/7;
+  grid-column: 1;
+  grid-row:3;
   border-top-right-radius: 10%;
   border-bottom-right-radius: 10%;
 }
 
 .box8 {
-  grid-column:3/5;
-  grid-row:5/7;
+  grid-column:2;
+  grid-row:3;
   border-top-left-radius: 10%;
   border-bottom-left-radius: 10%;
 }
 
-.box9 {
+/* .box9 {
   grid-column:2/4;
-  /* grid-row:12/14; */
-}
+} */
 
 .box10 {
-  grid-column: 1/3;
-  grid-row:7/9;
+  grid-column: 1;
+  grid-row:4;
   border-top-right-radius: 10%;
   border-bottom-left-radius: 10%;
 }
 
 .box11 {
-  grid-column:3/5;
-  grid-row:7/9;
+  grid-column:2;
+  grid-row:4;
   border-top-left-radius: 10%;
   border-bottom-right-radius: 10%;
 }
@@ -380,7 +400,7 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #111;
+  background-color: #333;
 }
 
 .right {
@@ -392,12 +412,16 @@ li a:hover {
   /* background-color: #4aaaa5; */
   color: white;
   vertical-align: middle;
-  padding: auto auto;
+  padding: auto;
   font-size: 10px;
   border: none;
   cursor: pointer;
   width: 60px;
-  height: 16px;
+  height: 26px;
+}
+
+.dropbtn.open {
+    background-color: #333;
 }
 
 .dropdown {
@@ -418,8 +442,12 @@ li a:hover {
   z-index: 2;
 }
 
+.dropdown-content.open {
+    display: block;
+}
+
 .dropdown-content li a {
-  color: black;
+  color: #333;
   padding: 10px 10px;
   text-decoration: none;
   display: block;
@@ -431,7 +459,7 @@ li a:hover {
 }
 
 .dropdown-content a:hover {
-  background-color: #111;
+  background-color: #333;
   color: white;
 }
 
@@ -506,6 +534,7 @@ a {
 
 .textLeft {
   margin: 10px;
+  text-align: left;
 }
 
 
@@ -520,6 +549,11 @@ a {
   background-color: rgb(152, 184, 36);
 } */
 
+#box2, #box8{
+    /* background-color: rgb(177, 65, 13); */
+    background: linear-gradient(135deg, rgb(81, 184, 129), rgb(46, 104, 73));
+}
+
 #box7{
   /* background-color: rgb(173, 24, 148); */
   background: linear-gradient(135deg, rgb(194, 28, 166), rgb(102, 14, 87));
@@ -530,17 +564,12 @@ a {
   background: linear-gradient(135deg, rgb(231, 170, 3), rgb(151, 111, 2));
 }
 
-#box8{
-  /* background-color: rgb(16, 151, 34); */
-  background: linear-gradient(135deg, rgb(21, 187, 44), rgb(8, 85, 19));
-
-}
-
-#box11, #box2{
+#box11 {
   /* background-color: rgb(177, 65, 13); */
   background: linear-gradient(135deg, rgb(211, 78, 17), rgb(134, 49, 10));
 
 }
+
 
 /*================ BOX IMAGES AND ANIMATIONS =====================*/
 .b1Image {
@@ -548,7 +577,7 @@ a {
 }
 
 .b2Image {
-  background-image:url('./imgs/RobotWars.PNG');
+  background-image:url('./imgs/MovieVue.png');
 }
 
 /* .b3Image {
@@ -601,6 +630,11 @@ a {
   transition: 1s ease-in-out;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  opacity: 1;
+}
+
+.overlay.active {
+    opacity: 0;
 }
 
 .box1:hover .overlay {
@@ -665,10 +699,9 @@ a {
 
 
 @media screen and (max-width: 980px) {
-  .wrapper{
-    grid-auto-rows: 70px minmax(150px, 200px);
-    margin: 0 50px 0 50px;
-  }
+  /* .wrapper{
+    grid-auto-rows: 250px;
+  } */
 
   #nav {
     /* margin: 0 -50px 0px -50px; */
@@ -700,6 +733,7 @@ a {
   .main {
     font-size: 22px;
     padding: 15px;
+    border-radius: 0;
   }
 
   .badge {
@@ -717,23 +751,17 @@ a {
   }
 
   form, textarea, input[type="text"], input[type="email"], select {
-    width: 400px;
+    /* width: 400px; */
   }
 
   textarea {
-    height: 70px;
+    /* height: 70px; */
   }
 
   .connectImages h1 {
     font-size: 36px;
   }
 
-  .connect_img {
-    height: 60px;
-    width: 60px;
-    margin-right: 0;
-    /* padding: 5px; */
-  }
 
     /*================ Text =====================*/
   .box a {
@@ -784,8 +812,8 @@ a {
 /* Tablet Layout */
 @media screen and (max-width: 768px) {
   .wrapper{
-    /* grid-auto-rows: 60px minmax(150px, auto); */
-    margin: 0 20px 0 20px;
+    grid-auto-rows: 240px;
+    /* max-width: 500px; */
   }
 
   #nav {
@@ -802,7 +830,7 @@ a {
   }
 
   .main {
-    font-size: 18px;
+    font-size: 20px;
     padding: 20px;
   }
 
@@ -812,7 +840,7 @@ a {
   }
 
   .contact {
-    height: 255px;
+    height: 100%;
   }
 
   .connectImages h1 {
@@ -824,44 +852,56 @@ a {
   }
 
   button[type="submit"] {
-    padding: 0;
-    width: 100px;
+    padding: 10px;
+    width: 80%;
     margin-bottom: 0;
   }
 
+  button.emailSubmit.desk {
+      display: none;
+  }
+
+  button.emailSubmit.mobile {
+    display: block;
+}
+
+  #contact-form > .col {
+      width: 100%;
+      margin: 0 auto;
+  }
   form, textarea, input[type="text"], input[type="email"], select {
-    width: 300px;
-    margin: 5px 0;
-    padding: 5px 5px;
+    /* width: 300px; */
+    /* margin: 5px 0; */
+    /* padding: 5px 5px; */
     font-size: 14px;
   }
 
 
   textarea {
-    height: 30px;
+    /* height: 30px; */
   }
 
   /* button[type="submit"] {
     padding: 5px 0;
   } */
 
-  .connectImages {
+  /* .connectImages {
     grid-column: 1;
     padding: 0;
     margin: -70px 0;
-  }
+  } */
 
   .connectImages h1 {
     visibility: hidden;
     font-size: 16px;
   }
 
-  .connect_img {
+  /* .connect_img {
     height: 40px;
     width: 40px;
     padding: 0;
     margin: 0px 5px;
-  }
+  } */
 
     /*================ Text =====================*/
     .box a {
@@ -887,7 +927,7 @@ a {
   /* Phone (landscape) Layout */
 @media screen and (max-width: 640px) {
   .wrapper{
-    grid-auto-rows: 60px minmax(100px, 150px);
+    grid-auto-rows: 225px;
     grid-gap:20px;
   }
 
@@ -931,9 +971,9 @@ a {
     width: auto;
   }
   .main {
-    margin: 50px -20px -40px -20px;
-    font-size: 14px;
-    padding: 10px -20px;
+    margin:10px auto;
+    /* font-size: 14px; */
+    padding: 10px;
     overflow: auto;
   }
 
@@ -942,8 +982,9 @@ a {
   }
 
   .badge {
-    height: 25px;
-    width: 25px;
+      margin: 5px;
+    /* height: 25px;
+    width: 25px; */
   }
 
   /* input[type="text"], input[type="email"], select {
@@ -951,16 +992,16 @@ a {
     padding: 3px 5px;
   } */
 
-  button[type="submit"] {
+  /* button[type="submit"] {
     padding: 0;
     width: 100px;
     margin-bottom: 0;
-  }
+  } */
 
   form, textarea, input[type="text"], input[type="email"], select {
-    width: 300px;
-    margin: 5px 0;
-    padding: 5px 5px;
+    width: 90%;
+    /* margin: 5px 0;
+    padding: 5px 5px; */
   }
 
   /*================ Text =====================*/
@@ -983,8 +1024,54 @@ a {
 
 }
 
-@media screen and (max-width: 520px) {
-  .skillBadges {
-    visibility: hidden;
+@media screen and (max-width: 500px) {
+  .wrapper{
+    grid-auto-rows: 185px;
   }
+
+  .box p {
+      font-size: 12px;
+  }
+
+  .textLeft h1, .textRight h1 {
+      font-size: 18px;
+  }
+  .box a {
+      margin-bottom: 10px;
+      display: block;
+      text-align: center;
+  }
+
+  .connectImages a {
+      display: inline-block;
+  }
+
+  .app-description {
+      display: none;
+  }
+}
+
+
+
+
+/* Footer Info */
+
+.footer a {
+    float: right;
+    height: auto;
+    width: auto;
+    padding: 0;
+    border: none;
+    margin-right: 10px;
+}
+
+
+.connect_img {
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    border: none;
+    border-radius:30%;
+    box-shadow: 2px 2px 10px #888888;
+
 }
