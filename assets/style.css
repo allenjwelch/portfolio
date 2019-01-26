@@ -5,7 +5,7 @@ font-family: 'Ubuntu', sans-serif;
 */
 
 :root {
-  --fontA: 'Ubuntu', sans-serif;
+  --fontA: 'Oswald', sans-serif;
   --fontB: 'Kaushan Script', cursive;
   --fontC: 'Skranji', cursive;
   /* var(--fontA); */
@@ -42,7 +42,10 @@ font-family: 'Ubuntu', sans-serif;
 
 #nav li {
   font-size: 18px;
+}
 
+.right.menu, .dropdown-content a {
+  font-family: var(--fontA); 
 }
 
 .box {
