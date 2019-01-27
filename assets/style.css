@@ -1,1058 +1,215 @@
-/* font-family: 'Indie Flower', cursive;
-font-family: 'Pacifico', cursive;
-font-family: 'Kaushan Script', cursive;
+/* 
 font-family: 'Skranji', cursive;
-font-family: 'Satisfy', cursive;
-font-family: 'Luckiest Guy', cursive;
-font-family: 'Jua', sans-serif;
-font-family: 'Ubuntu', sans-serif;*/
+font-family: 'Kaushan Script', cursive;
+font-family: 'Ubuntu', sans-serif;
+*/
 
-* {
-  padding: 0;
-  margin: 0;
+:root {
+    --fontA: 'Oswald', sans-serif;
+    --fontB: 'Kaushan Script', cursive;
+    --fontC: 'Skranji', cursive;
+    /* var(--fontA); */
 }
 
-.wrapper{
-  display:grid;
-  grid-template-columns:repeat(2, 1fr);
-  grid-auto-rows: 280px;
-  grid-gap:10px;
-  width: 90%;
-  max-width: 1024px;
-  margin: 0 auto;
-  position:relative;
+* {
+    padding: 0;
+    margin: 0;
 }
 
 .header {
-  grid-column:1/-1;
+    grid-column: 1/-1;
 }
 
 #nav {
-  height: 68px;
-  /* margin: 0 -120px 0 -120px; */
-  /* padding: 0 120px 0 120px; */
-  font-family: 'Kaushan Script', cursive
+    height: 68px;
+    font-family: var(--fontB);
 }
 
 #nav h1 {
-  font-size: 35px;
+    font-size: 35px;
 }
 
 #nav li {
-  font-size: 18px;
+    font-size: 18px;
+}
 
+.right.menu,
+.dropdown-content a {
+    font-family: var(--fontA);
 }
 
 .box {
-  position: relative;
-  padding: 10px;
-  color: white;
-  overflow: hidden;
+    position: relative;
+    padding: 10px;
+    color: white;
+    overflow: hidden;
 }
 
 .about {
-  /* grid-column: 1/-1; */
-  /* grid-row: 2/6; */
-  /* margin: 0 -120px 0 -120px; */
+    position: relative;
 }
 
 .parallax {
-  background-image: url("./imgs/code.jpg");
-  background-attachment: fixed;
-  /* top: 0; */
-  /* right: 0; */
-  width: 100%;
-  height: 560px;
-  background-size: cover;
-  z-index: 1;
-  /* display: grid; */
-  /* grid-template-columns:1fr 8fr 1fr; */
-  /* grid-auto-rows:minmax(200px, 200px); */
-  overflow: hidden;
-  text-align: center;
+    background-image: url('./imgs/code.jpg');
+    background-attachment: fixed;
+    background-position: 65% 100%;
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
 }
 
 .main {
-  /* grid-column: 2; */
-  /* justify-self: center; */
-  margin: 10px auto;
-  max-height: 400px;
-  max-width: 980px;
-  width: auto;
-  padding: 10px 15px;
-  /* border-radius: 20px; */
-  /* background-color: rgba(89, 96, 128, 0.719); */
-  background-color:  rgba(71, 71, 71, 0.90);
-  /* background: linear-gradient(140deg, rgba(71, 71, 71, 0.90), rgba(81, 87, 117, 0.90) ); */
-  color: rgb(222, 222, 238);
-  overflow: hidden;
-  font-size: 24px;
-  font-family: 'Ubuntu', sans-serif;
-  text-align: center;
-  position: relative;
+    background-color: rgba(71, 71, 71, 0.5);
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 20px;
+    font-size: 24px;
+    font-family: var(--fontA);
+
+    margin: 20px 0 20px 2%;
+    height: auto;
+    width: 310px;
+}
+
+.main .text {
+    text-align: center;
+    position: relative;
+}
+
+.main .text p {
+    color: #fff;
+    height: auto;
 }
 
 #profileImg {
-  /* grid-column: 2; */
-  margin: 100px auto 10px;
-  /* align-self: center; */
-  /* justify-self: center; */
-  border-radius: 30px;
-  height: 200px;
-  width: auto;
-  box-shadow: 5px 5px 10px #888888;
-}
-
-.skillBadges {
-  margin-top: 35px;
-  /* position: absolute;
-  bottom: 10px;
-  left: 5%;
-  right: 5%; */
-  display: inline-block;
-}
-
-.badge {
-  border-radius: 10px;
-  height: 45px;
-  width: 45px;
+    margin: 100px auto 10px;
+    border-radius: 30px;
+    height: 200px;
+    width: auto;
+    box-shadow: 5px 5px 10px #888888;
 }
 
 /* ============================ Project Title ======================*/
 .projectTitle {
-  /* grid-column: 1/-1; */
-  /* grid-row: 6; */
-  /* background: linear-gradient(140deg, rgb(71, 71, 71), rgb(128, 138, 184) ); */
-  /* margin: 0 -120px 0 -120px; */
-  background: #333;
-  width: 100%;
-  display: inline-grid;
-  padding: 12px 0;
-  justify-items: center;
-  font-family: 'Luckiest Guy', cursive;
-  font-size: 72px;
-  color: rgb(238, 237, 237);
+    background: #333;
+    width: 100%;
+    height: 50px;
+    display: block;
+    text-align: center;
 }
 
-#quote {
-  font-size: 28px;
-  font-family: 'Satisfy', cursive;
-  padding: 8px;
+.projectTitle p {
+    color: #fff;
+    padding: 10px;
+    font: 400 20px var(--fontA);
+    text-transform: uppercase;
 }
 
-#author {
-  font-size: 32px;
-  font-family: 'Satisfy', cursive;
-  margin-left: 300px;
+.projectTitle p:before,
+.projectTitle p:after {
+    content: '';
+    border-bottom: 1px solid #fff;
+    width: 30%;
+    display: inline-block;
+    margin: 0 10px 6px;
 }
 
 /* ============================ Contact & Footer ======================*/
 .contact {
-  /* grid-column: 1/-1;
-  grid-row: 15/17; */
-  /* background: linear-gradient(-40deg, rgb(71, 71, 71), rgb(128, 138, 184) ); */
-  background: #333;
-  /* margin: 0 -120px -30px -120px; */
-  width: 100%;
-  /* height: 100%; */
-  /* display: inline-grid; */
-  padding: 10px 0 40px;
-  /* justify-items: center; */
+    background: #333;
+    width: 100%;
+    padding: 10px 0 40px;
 }
 
 #contact-form > .col {
-  width: 45%;
-  display: inline-block;
-  vertical-align: top;
-  margin: 0 15px;
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
 }
 
 #contact-form {
-  /* grid-column: 1; */
-  width: 90%;
-  padding: 0px;
-  /* padding-bottom: 0; */
-  margin: 10px auto;
-  text-align: center;
+    width: 90%;
+    padding: 0px;
+    margin: 10px auto;
+    text-align: center;
 }
 
-input[type="text"], input[type="email"], select {
-  /* grid-column: 1; */
-  /* border-radius: 10px; */
-  width: 100%;
-  padding: 10px;
-  margin: 5px auto;
-  border: none;
-  border-bottom: 2px solid silver;
-  outline: none;
-  background: #f1f1f1;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 18px;
+input[type='text'],
+input[type='email'],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px auto;
+    border: none;
+    border-bottom: 2px solid silver;
+    outline: none;
+    background: #f1f1f1;
+    font-family: var(--fontA);
+    font-size: 18px;
 }
 
 textarea {
-  /* grid-column: 2; */
-  /* border-radius: 10px; */
-  width: 100%;
-  height: 150px;
-  padding: 10px;
-  margin: 5px auto;
-	display: block;
-  border: none;
-  border-bottom: 3px solid silver;
-  outline: none;
-  background: #f1f1f1;
-  resize: none;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 18px;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    margin: 5px auto;
+    display: block;
+    border: none;
+    border-bottom: 3px solid silver;
+    outline: none;
+    background: #f1f1f1;
+    resize: none;
+    font-family: var(--fontA);
+    font-size: 18px;
 }
 
-button[type="submit"] {
-  background-color: brown;
-  color: white;
-  font-size: 20px;
-  width: 80%;
-  padding: 10px 0;
-  margin: 10px auto 0;
-  border-radius: 20px;
-  outline: none;
-  font-family: 'Luckiest Guy', cursive;
+button[type='submit'] {
+    background-color: #a10000;
+    color: white;
+    font-size: 20px;
+    width: 80%;
+    padding: 5px 0;
+    margin: 10px auto 0;
+    border-radius: 20px;
+    outline: none;
+    font-family: var(--fontA);
 }
 
-button[type="submit"]:hover {
-  background-color: darkred;
-  border: 2px solid rgb(109, 1, 1);
-  box-shadow: 5px 5px 20px #dbcfcf;
-
+button[type='submit']:hover {
+    background-color: #8f0000;
+    box-shadow: 5px 5px 20px -5px #ccc;
 }
 
 button.emailSubmit.mobile {
     display: none;
 }
 
-input[type="text"]:focus, input[type="email"]:focus, select:focus, textarea:focus {
-  background-color:rgb(187, 192, 216)
+input[type='text']:focus,
+input[type='email']:focus,
+select:focus,
+textarea:focus {
+    background-color: rgb(187, 192, 216);
 }
 
-input[type="text"]:hover, input[type="email"]:hover, select:hover, textarea:hover {
-  border-color: rgb(149, 161, 216);
-}
-
-.connectImages {
-  /* grid-column: 2; */
-  /* justify-self: center; */
-  padding: 10px;
-  display:block;
-  text-align: center;
-}
-
-.connectImages h1 {
-  margin-top: 40px;
-  font-size: 52px;
-  text-align: center;
-}
-
-.box .connectImages h1 {
-  font-family: 'Kaushan Script', cursive;
-}
-
-/* .connect_img {
-  height: 60px;
-  width: 60px;
-  /* padding: 10px; */
-  margin: 20px 0px 5px;
-  border: none;
-  border-radius:30%;
-  box-shadow: 5px 5px 10px #888888;
-} */
-
-
-
-.connect_img:hover {
-  box-shadow: 5px 5px 20px #dbcfcf;
+input[type='text']:hover,
+input[type='email']:hover,
+select:hover,
+textarea:hover {
+    border-color: rgb(149, 161, 216);
 }
 
 .footer {
-  /* grid-column: 1/-1; */
-  /* grid-row: 17; */
-  background: rgb(71, 71, 71);
-  font-family: 'Kaushan Script', cursive;
-  /* margin: 0 -120px 0 -120px; */
-  height: 30px;
-  align-self: end;
-}
-
-#copyright {
-    display: inline-block;
-    padding: 6px;
-}
-
-
-
-/* ============================ Grid Layout ======================*/
-.projectPanels {
-    max-width: 1350px;
-    margin: 40px auto;
-    text-align: center;
-}
-
-.box1 {
-  grid-column: 1;
-  grid-row: 1;
-  border-top-left-radius: 10%;
-  border-bottom-right-radius: 10%;
-}
-
-.box2 {
-  grid-column: 2;
-  grid-row: 1;
-  border-top-right-radius: 10%;
-  border-bottom-left-radius: 10%;
-}
-
-/* .box3 {
-  grid-column:2/4;
-  grid-row:8/10;
-} */
-
-.box4 {
-  grid-column: 1;
-  grid-row:2;
-  border-top-right-radius: 10%;
-  border-bottom-right-radius: 10%;
-}
-
-.box5 {
-  grid-column:2;
-  grid-row:2;
-  border-top-left-radius: 10%;
-  border-bottom-left-radius: 10%;
-}
-
-/* .box6 {
-  grid-column: 1/-1;
-  z-index: -1;
-} */
-
-.box7 {
-  grid-column: 1;
-  grid-row:3;
-  border-top-right-radius: 10%;
-  border-bottom-right-radius: 10%;
-}
-
-.box8 {
-  grid-column:2;
-  grid-row:3;
-  border-top-left-radius: 10%;
-  border-bottom-left-radius: 10%;
-}
-
-/* .box9 {
-  grid-column:2/4;
-} */
-
-.box10 {
-  grid-column: 1;
-  grid-row:4;
-  border-top-right-radius: 10%;
-  border-bottom-left-radius: 10%;
-}
-
-.box11 {
-  grid-column:2;
-  grid-row:4;
-  border-top-left-radius: 10%;
-  border-bottom-right-radius: 10%;
-}
-
-.box3, .box9 {
-  z-index: 1;
-  border-radius: 100%;
-  margin: 10px 80px 10px 80px;
-}
-
-/* ============================ Nav Bar ======================*/
-.menu {
-  visibility: visible;
-}
-
-ul {
-  list-style-type: none;
-  overflow: hidden;
-  background-color: rgb(71, 71, 71);
-}
-
-li {
-  float: left;
-  color: white;
-}
-
-li h1 {
-  padding: 14px 16px;
-}
-
-li a {
-  display: block;
-  text-align: center;
-  padding: 26px 16px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #333;
-}
-
-.right {
-  float: right;
-}
-
-/* SM SCREEN NAV DROPDOWN */
-.dropbtn {
-  /* background-color: #4aaaa5; */
-  color: white;
-  vertical-align: middle;
-  padding: auto;
-  font-size: 10px;
-  border: none;
-  cursor: pointer;
-  width: 60px;
-  height: 26px;
-}
-
-.dropbtn.open {
-    background-color: #333;
-}
-
-.dropdown {
-  position: absolute;
-  top: -10px;
-  right: 40px;
-  height: 68px;
-  display: inline-block;
-  visibility: hidden;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: rgb(71, 71, 71);
-  width: 92px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 2;
-}
-
-.dropdown-content.open {
-    display: block;
-}
-
-.dropdown-content li a {
-  color: #333;
-  padding: 10px 10px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content li {
-  list-style-type: none;
-  right: 0;
-}
-
-.dropdown-content a:hover {
-  background-color: #333;
-  color: white;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-  right: 0;
-}
-
-/* ======================== Portfolio Style ===================================== */
-a {
-  color: white;
-  text-decoration: none;
-}
-
-/*================ Text =====================*/
-.box a {
-  font-family: 'Kaushan Script', cursive;
-  font-size: 24px;
-  padding: 5px 10px;
-  margin-right: 10px;
-  border: 1px solid white;
-  border-radius: 20px;
-}
-
-.box .textRight a:hover {
-  box-shadow: 5px 5px 20px #dbcfcf;
-}
-
-.box .textLeft a:hover {
-  box-shadow: 5px 5px 20px #dbcfcf;
-}
-
-.box h1 {
-  font-family: 'Skranji', cursive;
-  font-size: 42px;
-}
-
-.box p {
-  font-family: 'Ubuntu', sans-serif;
-  margin: 10px 0;
-  font-size: 20px;
-}
-
-/* .textCenter {
-  /* position: absolute; */
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-  /* text-align: center;
-  padding: 25px 20px;
-}
-
-.textCenter h1 {
-  font-size: 32px;  */
-/* }
-
-.textCenter p {
-  font-size: 18px;
-}
-
-.textCenter a {
-  font-size: 20px;
-  padding: 2px 10px;
-
-} */
-
-.textRight {
-  text-align: right;
-  float:right;
-  margin: 10px;
-}
-
-.textLeft {
-  margin: 10px;
-  text-align: left;
-}
-
-
-/*================ Color =====================*/
-#box1, #box5, #box10{
-  background: linear-gradient(135deg, rgb(4, 123, 163), rgb(0, 47, 63));
-}
-
-#box2, #box8{
-    background: linear-gradient(135deg, rgb(81, 184, 129), rgb(46, 104, 73));
-}
-
-#box7{
-  background: linear-gradient(135deg, rgb(194, 28, 166), rgb(102, 14, 87));
-}
-
-#box4 {
-  background: linear-gradient(135deg, rgb(231, 170, 3), rgb(151, 111, 2));
-}
-
-#box11 {
-  background: linear-gradient(135deg, rgb(211, 78, 17), rgb(134, 49, 10));
-}
-
-
-#box1, #box4, #box7, #box10 {
-  /* background: linear-gradient(135deg, #999, #777); */
-}
-
-#box2, #box5, #box8, #box11 {
-  /* background: linear-gradient(-135deg, #636363e6, #1d1d1de6); */
-}
-
-/*================ BOX IMAGES AND ANIMATIONS =====================*/
-.b1Image {
-  background-image:url('./imgs/mxtp.PNG');
-}
-
-.b2Image {
-  background-image:url('./imgs/MovieVue.png');
-}
-
-/* .b3Image {
-  background-image:url('./imgs/trivia.PNG');
-  border-radius: 100%;
-} */
-
-.b4Image {
-  background-image:url('./imgs/cicerowned.PNG');
-}
-
-.b5Image {
-  background-image:url('./imgs/cryptoLogo.png');
-}
-
-.b6Image {
-  /* background-image:url('./imgs/trainlogo.jpg');
-  border-radius: 100%;  */
-}
-
-.b7Image {
-  background-image:url('./imgs/friendFinder.PNG');
-}
-
-.b8Image {
-  background-image:url('./imgs/clickItTitle.PNG');
-}
-
-/* .b9Image {
-  background-image:url('./imgs/trainlogo.jpg');
-  border-radius: 100%;
-} */
-
-.b10Image {
-  background-image:url('./imgs/news.PNG');
-}
-
-.b11Image {
-  background-image:url('./imgs/GiphyAPI.PNG');
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  transition: 1s ease-in-out;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  opacity: 1;
-}
-
-.overlay.active {
-    opacity: 0;
-}
-
-.box1:hover .overlay {
-  transform: translateX(-900px);
-}
-
-.box2:hover .overlay {
-  transform: translateX(900px);
-}
-
-/* .box3:hover .overlay {
-  transform: translateY(-450px);
-} */
-
-.box4:hover .overlay {
-  transform: translateX(-900px)
-}
-
-.box5:hover .overlay {
-  transform: translateX(900px)
-}
-
-/* .box6:hover .overlay {
-  transform: scale(0);
-  opacity: 0;
-} */
-
-.box7:hover .overlay {
-  transform: translateX(-900px)
-}
-
-.box8:hover .overlay {
-  transform: translateX(900px)
-}
-
-/* .box9:hover .overlay {
-  transform: translateY(450px);
-} */
-
-.box10:hover .overlay {
-  transform: translateX(-900px)
-}
-
-.box11:hover .overlay {
-  transform: translateX(900px)
-}
-
-/* .gridR {
-  display:grid;
-  grid-template-columns: 1fr 8fr;
-} */
-
-/* ============================================ Media Queries ============================= */
-/* Desktop Layout */
-/* @media screen and (max-width: 1440px) {
-    .wrapper{
-        grid-auto-rows: 70px minmax(150px, 200px);
-        margin: 0 50px 0 50px;
-      }
-
-} */
-
-
-@media screen and (max-width: 980px) {
-  /* .wrapper{
-    grid-auto-rows: 250px;
-  } */
-
-  #nav {
-    /* margin: 0 -50px 0px -50px; */
-    /* padding: 0 40px 0 40px; */
-  }
-
-  .about, .projectTitle, .contact, .footer {
-    /* margin: 0 -50px; */
-  }
-
-  .box3, .box9 {
-    margin: 10px 60px 10px 60px;
-  }
-
-  .projectTitle {
-    font-size: 64px;
-    padding-top: 30px;
-  }
-
-  #quote {
-    font-size: 24px;
-  }
-
-  #author {
-    font-size: 24px;
-    margin-left: 200px;
-  }
-
-  .main {
-    font-size: 22px;
-    padding: 15px;
-    border-radius: 0;
-  }
-
-  .badge {
+    background: rgb(71, 71, 71);
+    font-family: var(--fontB);
+    color: #fff;
     height: 35px;
-    width: 35px;
-  }
-
-  .contact {
-  margin-bottom: -30px;
-  }
-
-  form {
-    margin: 10px 0 0 -10px;
-    padding-top: 0;
-  }
-
-  form, textarea, input[type="text"], input[type="email"], select {
-    /* width: 400px; */
-  }
-
-  textarea {
-    /* height: 70px; */
-  }
-
-  .connectImages h1 {
-    font-size: 36px;
-  }
-
-
-    /*================ Text =====================*/
-  .box a {
-    font-size: 18px;
-    padding: 5px 10px;
-    margin-right: 10px;
-    border: 1px solid white;
-    border-radius: 18px;
-  }
-
-  .box h1 {
-    font-size: 36px;
-  }
-
-  .box p {
-    margin: 10px 0;
-    font-size: 18px;
-  }
-
-  /* .textCenter {
-    padding: 15px 10px;
-  } */
-
-  /* .textCenter h1 {
-      font-size: 22px;
-    }
-
-    .textCenter p {
-      font-size: 12px;
-    }
-
-    .textCenter a {
-      font-size: 12px;
-    } */
-
-  .textRight {
-    /* width: 65%; */
-    margin: 10px;
-  }
-
-  .textLeft {
-    /* width: 65%; */
-    margin: 10px;
-  }
-
+    padding: 4px;
 }
 
-/* Tablet Layout */
-@media screen and (max-width: 768px) {
-  .wrapper{
-    grid-auto-rows: 240px;
-    /* max-width: 500px; */
-  }
-
-  #nav {
-    /* margin: 0 -20px 0px -20px;
-    padding: 0 -40px 0 40px; */
-  }
-
-  .about, .projectTitle, .contact, .footer {
-    /* margin: 0 -20px; */
-  }
-
-  .box3, .box9 {
-    margin: 10px 60px 10px 60px;
-  }
-
-  .main {
-    font-size: 20px;
-    padding: 20px;
-  }
-
-  .badge {
-    height: 30px;
-    width: 30px;
-  }
-
-  .contact {
-    height: 100%;
-  }
-
-  .connectImages h1 {
-      margin-top: 20px;
-  }
-
-  form {
-    margin: 0px 0 0 0;
-  }
-
-  button[type="submit"] {
-    padding: 10px;
-    width: 80%;
-    margin-bottom: 0;
-  }
-
-  button.emailSubmit.desk {
-      display: none;
-  }
-
-  button.emailSubmit.mobile {
-    display: block;
-}
-
-  #contact-form > .col {
-      width: 100%;
-      margin: 0 auto;
-  }
-  form, textarea, input[type="text"], input[type="email"], select {
-    /* width: 300px; */
-    /* margin: 5px 0; */
-    /* padding: 5px 5px; */
-    font-size: 14px;
-  }
-
-
-  textarea {
-    /* height: 30px; */
-  }
-
-  /* button[type="submit"] {
-    padding: 5px 0;
-  } */
-
-  /* .connectImages {
-    grid-column: 1;
-    padding: 0;
-    margin: -70px 0;
-  } */
-
-  .connectImages h1 {
-    visibility: hidden;
-    font-size: 16px;
-  }
-
-  /* .connect_img {
-    height: 40px;
-    width: 40px;
-    padding: 0;
-    margin: 0px 5px;
-  } */
-
-    /*================ Text =====================*/
-    .box a {
-      font-size: 16px;
-      padding: 5px 8px;
-      margin-right: 10px;
-      border: 1px solid white;
-      border-radius: 18px;
-    }
-
-    .box h1 {
-      font-size: 28px;
-    }
-
-    .box p {
-      margin: 5px 0;
-      font-size: 16px;
-    }
-
-
-}
-
-  /* Phone (landscape) Layout */
-@media screen and (max-width: 640px) {
-  .wrapper{
-    grid-auto-rows: 225px;
-    grid-gap:20px;
-  }
-
-  .box3, .box9 {
-    margin: 10px 20px 10px 20px;
-  }
-
-  #nav {
-    /* margin: 0 -20px 0px -20px; */
-    /* padding: 0; */
-  }
-/*
-  .box9 {
-    margin: 50px 20px;
-  } */
-  .dropdown {
-    visibility: visible;
-    margin-right: -40px;
-  }
-
-  .menu {
-    visibility: hidden;
-  }
-
-  .projectTitle {
-    font-size: 48px;
-  }
-
-  #quote {
-    font-size: 14px;
-  }
-
-  #author {
-    font-size: 14px;
-    margin-left: 150px;
-  }
-
-  #profileImg {
-    margin:60px 0 10px 0;
-    height: 150px;
-    width: auto;
-  }
-  .main {
-    margin:10px auto;
-    /* font-size: 14px; */
-    padding: 10px;
-    overflow: auto;
-  }
-
-  .skillBadges {
-    margin-top: 10px;
-  }
-
-  .badge {
-      margin: 5px;
-    /* height: 25px;
-    width: 25px; */
-  }
-
-  /* input[type="text"], input[type="email"], select {
-    margin: 5px 0;
-    padding: 3px 5px;
-  } */
-
-  /* button[type="submit"] {
-    padding: 0;
-    width: 100px;
-    margin-bottom: 0;
-  } */
-
-  form, textarea, input[type="text"], input[type="email"], select {
-    width: 90%;
-    /* margin: 5px 0;
-    padding: 5px 5px; */
-  }
-
-  /*================ Text =====================*/
-  .box a {
-    font-size: 14px;
-    padding: 5px 8px;
-    margin-right: 0;
-    border: 1px solid white;
-    border-radius: 18px;
-  }
-
-  .box h1 {
-    font-size: 22px;
-  }
-
-  .box p {
-    margin: 5px 0;
-    font-size: 14px;
-  }
-
-}
-
-@media screen and (max-width: 500px) {
-  .wrapper{
-    grid-auto-rows: 185px;
-  }
-
-  .box p {
-      font-size: 12px;
-  }
-
-  .textLeft h1, .textRight h1 {
-      font-size: 18px;
-  }
-  .box a {
-      margin-bottom: 10px;
-      display: block;
-      text-align: center;
-  }
-
-  .connectImages a {
-      display: inline-block;
-  }
-
-  .app-description {
-      display: none;
-  }
-}
-
-
-
-
-/* Footer Info */
 
 .footer a {
     float: right;
@@ -1063,13 +220,334 @@ a {
     margin-right: 10px;
 }
 
-
 .connect_img {
     height: 30px;
     width: 30px;
-    margin: 0;
+    margin: 2px 0 0;
     border: none;
-    border-radius:30%;
+    border-radius: 30%;
     box-shadow: 2px 2px 10px #888888;
+}
+
+#copyright {
+    display: inline-block;
+    padding: 10px;
+}
+
+/* ============================ Grid Layout ======================*/
+.projectPanels {
+    max-width: 1350px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* ============================ Nav Bar ======================*/
+.menu {
+    visibility: visible;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(71, 71, 71);
+}
+
+li {
+    float: left;
+    color: white;
+}
+
+li h1 {
+    padding: 14px 16px;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 26px 16px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #333;
+}
+
+.right {
+    float: right;
+}
+
+/* SM SCREEN NAV DROPDOWN */
+.dropbtn {
+    color: white;
+    vertical-align: middle;
+    padding: auto;
+    font-size: 10px;
+    border: none;
+    cursor: pointer;
+    width: 60px;
+    height: 26px;
+}
+
+.dropbtn.open {
+    background-color: #333;
+}
+
+.dropdown {
+    position: absolute;
+    top: -10px;
+    right: 40px;
+    height: 68px;
+    display: inline-block;
+    visibility: hidden;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(71, 71, 71);
+    width: 92px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.dropdown-content.open {
+    display: block;
+}
+
+.dropdown-content li a {
+    color: #333;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content li {
+    list-style-type: none;
+    right: 0;
+}
+
+.dropdown-content a:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* ======================== Portfolio Style ===================================== */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    grid-auto-rows: auto;
+    grid-gap: 20px;
+    width: 80%;
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    position: relative;
+    text-align: left;
+    transition: all 1s;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 0 #ccc;
+}
+
+.box .skillBadges {
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.box .badge {
+    border-radius: 10px;
+    height: 25px;
+    width: 25px;
+    transition: all 1s;
+}
+
+.box .badge:hover {
+    transform: scale(1.5);
+}
+
+.box a {
+    font-family: var(--fontB);
+    font-size: 20px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-bottom: 2px;
+    color: #333;
+    text-decoration: none;
+}
+
+.box a:hover {
+    border-bottom: 2px solid #333;
+}
+
+.box h1 {
+    font-family: var(--fontC);
+    font-size: 36px;
+    color: #333;
+}
+
+.box p {
+    font-family: var(--fontA);
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+/* //! Lg Tablet Layout =========================================================================================================== */
+@media (max-width: 1024px) {
+
+    .main {
+        font-size: 22px;
+        padding: 15px;
+    }
+
+    .badge {
+        height: 35px;
+        width: 35px;
+    }
+
+    .contact {
+        margin-bottom: -30px;
+    }
+
+    form {
+        margin: 10px 0 0 -10px;
+        padding-top: 0;
+    }
+
+    /*================ Portfolio =====================*/
+
+    .box a {
+        font-size: 18px;
+        padding: 5px 10px;
+        margin-right: 10px;
+    }
+
+    .box h1 {
+        font-size: 36px;
+    }
+
+    .box p {
+        margin: 10px 0;
+        font-size: 18px;
+    }
 
 }
+
+/* //! Tablet Layout =========================================================================================================== */
+@media (max-width: 768px) {
+    .main {
+        background-color: rgba(71, 71, 71, 0.8);
+    }
+
+    .badge {
+        height: 30px;
+        width: 30px;
+    }
+
+    .contact {
+        height: 100%;
+    }
+
+    form {
+        margin: 0px 0 0 0;
+    }
+
+    button[type='submit'] {
+        padding: 5px;
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    button.emailSubmit.desk {
+        display: none;
+    }
+
+    button.emailSubmit.mobile {
+        display: block;
+    }
+
+    #contact-form > .col {
+        width: 100%;
+        margin: 0 auto;
+    }
+    form,
+    textarea,
+    input[type='text'],
+    input[type='email'],
+    select {
+        font-size: 14px;
+    }
+
+    /*================ Portfolio =====================*/
+
+    .box a {
+        font-size: 16px;
+        padding: 5px 8px;
+        margin-right: 10px;
+    }
+
+    .box h1 {
+        font-size: 28px;
+    }
+
+    .box p {
+        font-size: 16px;
+    }
+}
+
+/* //! Phone Layout =========================================================================================================== */
+@media (max-width: 551px) {
+    .main {
+        margin: 20% auto;
+        border-radius: 0;
+        width: 90%;
+    }
+
+    .dropdown {
+        visibility: visible;
+        margin-right: -40px;
+    }
+
+    .menu {
+        visibility: hidden;
+    }
+
+    form,
+    textarea,
+    input[type='text'],
+    input[type='email'],
+    select {
+        width: 90%;
+    }
+
+    .heroku {
+        display: none; 
+    }
+
+    #box1 {}
+    #box2 {}
+    #box2 {}
+    #box3 .materialize { display: none;}
+    #box4 {}
+    #box5 {}
+    #box6 {}
+    #box7 {}
+    #box8 {}
+
+}
+
+
+
