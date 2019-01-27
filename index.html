@@ -24,33 +24,32 @@
 <body>
 
 
-  <!-- <div class="wrapper"> -->
     <div class="header">
-      <ul id='nav'>
-        <li><h1>Allen Welch</h1></li>
-        <li class='right menu'><a href="assets/AllenWelch_Resume.pdf" target="_blank">Resume</a></li>
-        <li class='right menu'><a class="contactLink" href="javascript:void(0)">Contact</a></li>
-        <li class='right menu'><a class="portfolioLink" href="javascript:void(0)">Portfolio</a></li>
-        <li class='right menu'><a class="aboutLink" href="javascript:void(0)">About</a></li>
-        <li class="right dropdown">
-          <a href="#" class="dropbtn"><i class="fa fa-reorder" style="font-size:28px;"></i></a>
-          <div class="dropdown-content">
-            <a class="aboutLink" href="javascript:void(0)">About</a>
-            <a class="portfolioLink" href="javascript:void(0)">Portfolio</a>
-            <a class="contactLink" href="javascript:void(0)">Contact</a>
-            <a href="assets/AllenWelch_Resume.pdf" target="_blank">Resume</a>
-          </div>
-      </ul>
+        <ul id='nav'>
+            <li><h1>Allen Welch</h1></li>
+            <li class='right menu'><a href="assets/AllenWelch_Resume.pdf" target="_blank">Resume</a></li>
+            <li class='right menu'><a class="contactLink" href="javascript:void(0)">Contact</a></li>
+            <li class='right menu'><a class="portfolioLink" href="javascript:void(0)">Portfolio</a></li>
+            <li class='right menu'><a class="aboutLink" href="javascript:void(0)">About</a></li>
+            <li class="right dropdown">
+            <a href="#" class="dropbtn"><i class="fa fa-reorder" style="font-size:28px;"></i></a>
+            <div class="dropdown-content">
+                <a class="aboutLink" href="javascript:void(0)">About</a>
+                <a class="portfolioLink" href="javascript:void(0)">Portfolio</a>
+                <a class="contactLink" href="javascript:void(0)">Contact</a>
+                <a href="assets/AllenWelch_Resume.pdf" target="_blank">Resume</a>
+            </div>
+        </ul>
     </div>
 
     <div class="about">
       <div class="parallax">
-        <img id="profileImg" src="assets/imgs/IMG_3029.JPG" alt="profile image">
+        <!-- <img id="profileImg" src="assets/imgs/IMG_3029.JPG" alt="profile image"> -->
         <div class="main">
           <div class="text">
             <p>Full Stack developer with a background in research and online education using various Learning Management Systems. Detailed-oriented and committed to developing creative and efficient applications through the use of modern web development solutions.</p>
           </div>
-          <div class="skillBadges">
+          <!-- <div class="skillBadges">
             <img class="badge" src="assets/imgs/html.png" alt="html">
             <img class="badge" src="assets/imgs/css.png" alt="css">
             <img class="badge" src="assets/imgs/js.png" alt="js">
@@ -67,149 +66,137 @@
             <img class="badge" src="assets/imgs/mongodb.png" alt="mongodb">
             <img class="badge" src="assets/imgs/bootstrap.png" alt="bootstrap">
             <img class="badge" src="assets/imgs/materialize.png" alt="materialize">
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
 
-    <div class="projectTitle" id='portfolio'></div>
+    <div class="projectTitle" id='portfolio'>
+        <p>Projects</p> 
+    </div>
 
     <section class="projectPanels">
         <div class="wrapper">
+
             <div class="box" id='box1'>
-            <div class="textLeft">
-                <h1>MXTP</h1>
-                <p class="app-description">Responsive web app where users design and create mixtapes with audio and video playback.</p>
-                <hr>
-                <p>Built on Materialize CSS, Firebase, & Javascript.</p>
-                <br>
-                <a href="https://github.com/allenjwelch/MXTP/" target="_blank">Github</a>
-                <a href="https://allenjwelch.github.io/MXTP/" target="_blank">Deployed</a>
-            </div>
-            <div class="overlay b1Image"></div>
+                <div class="textLeft">
+                    <h1>MXTP</h1>
+                    <p class="app-description">Responsive web app where users design and create mixtapes with audio and video playback.</p>
+                    <hr>
+                    <p>Built on Materialize CSS, Firebase, & Javascript.</p>
+                    <br>
+                    <a href="https://github.com/allenjwelch/MXTP/" target="_blank">Github</a>
+                    <a href="https://allenjwelch.github.io/MXTP/" target="_blank">Deployed</a>
+                </div>
             </div>
 
             <div class="box" id='box2'>
-            <div class="textRight">
-                <h1>Movie Vue</h1>
-                <p class="app-description">A Vue.js application utilizing The Movie DB to browse movies and television. </p>
-                <hr>
-                <p>Built on Vue.js, Javascript, & Node.js.</p>
-                <br>
-                <a href="https://github.com/allenjwelch/movie-vue" target="_blank">Github</a>
-                <a href="https://movie-vue.herokuapp.com/" target="_blank">Deployed</a>
-            </div>
-            <div class="overlay b2Image"></div>
+                <div class="textRight">
+                    <h1>Movie Vue</h1>
+                    <p class="app-description">A Vue.js application utilizing The Movie DB to browse movies and television. </p>
+                    <hr>
+                    <p>Built on Vue.js, Javascript, & Node.js.</p>
+                    <br>
+                    <a href="https://github.com/allenjwelch/movie-vue" target="_blank">Github</a>
+                    <a href="https://movie-vue.herokuapp.com/" target="_blank">Deployed</a>
+                </div>
             </div>
 
             <div class="box" id='box3'>
-            <div class="textLeft">
-                <h1>Cicerowned!</h1>
-                <p class="app-description">An educational application designed to assist servers and beer drinkers alike in their pursuit of earning their Cicerone Cerifications.</p>
-                <hr>
-                <p>Built on MongoDB, Express.js, React, & Node.js.</p>
-                <br>
-                <a href="https://github.com/allenjwelch/cicerowned_project" target="_blank">Github</a>
-                <a href="https://cicerowned.herokuapp.com/" target="_blank">Deployed</a>
-            </div>
-            <div class="overlay b3Image"></div>
+                <div class="textLeft">
+                    <h1>Cicerowned!</h1>
+                    <p class="app-description">An educational application designed to assist servers and beer drinkers alike in their pursuit of earning their Cicerone Cerifications.</p>
+                    <hr>
+                    <p>Built on MongoDB, Express.js, React, & Node.js.</p>
+                    <br>
+                    <a href="https://github.com/allenjwelch/cicerowned_project" target="_blank">Github</a>
+                    <a href="https://cicerowned.herokuapp.com/" target="_blank">Deployed</a>
+                </div>
             </div>
 
             <div class="box" id='box4'>
-            <div class="textRight">
-                <h1>Cryptoverse</h1>
-                <p class="app-description">An application for newcomers in the world of crypto currency allowing users learn and monitor their coins.</p>
-                <hr>
-                <p>Built on Node.js, Express.js, Handlebars, Sequelize, & JWTs.</p>
-                <br>
-                <a href="https://github.com/allenjwelch/Crypto-verse" target="_blank">Github</a>
-                <a href="https://cryptoverse.herokuapp.com/" target="_blank">Deployed</a>
-            </div>
-            <div class="overlay b4Image"></div>
+                <div class="textRight">
+                    <h1>Cryptoverse</h1>
+                    <p class="app-description">An application for newcomers in the world of crypto currency allowing users learn and monitor their coins.</p>
+                    <hr>
+                    <p>Built on Node.js, Express.js, Handlebars, Sequelize, & JWTs.</p>
+                    <br>
+                    <a href="https://github.com/allenjwelch/Crypto-verse" target="_blank">Github</a>
+                    <a href="https://cryptoverse.herokuapp.com/" target="_blank">Deployed</a>
+                </div>
             </div>
 
             <div class="box" id='box5'>
-            <div class="textLeft">
-                <h1>Friend-Finder</h1>
-                <p class="app-description">Responsive web app where users complete a brief survey in order to find a friend with the closest compatability rating.</p>
-                <hr>
-                <p>Built on Node.js, Express.js, Bootstrap v4.1, Mail-gun.js, & mySQL.</p>
-                <br>
-                <a href="https://github.com/allenjwelch/Friend-Finder" target="_blank">Github</a>
-                <a href="https://friend-finder-aw.herokuapp.com/" target="_blank">Deployed</a>
-            </div>
-            <div class="overlay b5Image"></div>
+                <div class="textLeft">
+                    <h1>Friend-Finder</h1>
+                    <p class="app-description">Responsive web app where users complete a brief survey in order to find a friend with the closest compatability rating.</p>
+                    <hr>
+                    <p>Built on Node.js, Express.js, Bootstrap v4.1, Mail-gun.js, & mySQL.</p>
+                    <br>
+                    <a href="https://github.com/allenjwelch/Friend-Finder" target="_blank">Github</a>
+                    <a href="https://friend-finder-aw.herokuapp.com/" target="_blank">Deployed</a>
+                </div>
             </div>
 
             <div class="box" id='box6'>
-            <div class="textRight">
-                <h1>Click-It!</h1>
-                <p class="app-description">React application where users click image cards to earn points. Built on React's components and rendering new states to the DOM.</p>
-                <hr>
-                <p>Built on React.js & Radium.</p>
-                <br>
-                <a href="https://github.com/allenjwelch/clicky-game" target="_blank">Github</a>
-                <a href="https://allenjwelch.github.io/clicky-game" target="_blank">Deployed</a>
-            </div>
-            <div class="overlay b6Image"></div>
+                <div class="textRight">
+                    <h1>Click-It!</h1>
+                    <p class="app-description">React application where users click image cards to earn points. Built on React's components and rendering new states to the DOM.</p>
+                    <hr>
+                    <p>Built on React.js & Radium.</p>
+                    <br>
+                    <a href="https://github.com/allenjwelch/clicky-game" target="_blank">Github</a>
+                    <a href="https://allenjwelch.github.io/clicky-game" target="_blank">Deployed</a>
+                </div>
             </div>
 
             <div class="box" id='box7'>
-            <div class="textLeft">
-                <h1>News Scraper</h1>
-                <p class="app-description">Responsive web application for scraping and saving the latest articles from the NY Times.</p>
-                <hr>
-                <p>Built on Materialize, Node.js, Cheerio, & MongoDB and Mongoose.</p>
-                <br>
-                <a href="https://github.com/allenjwelch/news-scraper" target="_blank">Github</a>
-                <a href="https://news-scraper-gtcbc.herokuapp.com/" target="_blank">Deployed</a>
-            </div>
-            <div class="overlay b7Image"></div>
+                <div class="textLeft">
+                    <h1>News Scraper</h1>
+                    <p class="app-description">Responsive web application for scraping and saving the latest articles from the NY Times.</p>
+                    <hr>
+                    <p>Built on Materialize, Node.js, Cheerio, & MongoDB and Mongoose.</p>
+                    <br>
+                    <a href="https://github.com/allenjwelch/news-scraper" target="_blank">Github</a>
+                    <a href="https://news-scraper-gtcbc.herokuapp.com/" target="_blank">Deployed</a>
+                </div>
             </div>
 
             <div class="box"id='box8'>
-            <div class="textRight">
-                <h1>Giphy Search</h1>
-                <p class="app-description">Gif image search engine for Giphy API that allows users to add searches to the page as well as play and pause each gifs on click.</p>
-                <hr>
-                <p>Built on Bootstrap v3.3, jQuery, & Javascript.</p>
-                <br>
-                <a href="https://github.com/allenjwelch/GiphyAPI-Search/" target="_blank">Github</a>
-                <a href="https://allenjwelch.github.io/GiphyAPI-Search/" target="_blank">Deployed</a>
-            </div>
-            <div class="overlay b8Image"></div>
+                <div class="textRight">
+                    <h1>Giphy Search</h1>
+                    <p class="app-description">Gif image search engine for Giphy API that allows users to add searches to the page as well as play and pause each gifs on click.</p>
+                    <hr>
+                    <p>Built on Bootstrap v3.3, jQuery, & Javascript.</p>
+                    <br>
+                    <a href="https://github.com/allenjwelch/GiphyAPI-Search/" target="_blank">Github</a>
+                    <a href="https://allenjwelch.github.io/GiphyAPI-Search/" target="_blank">Deployed</a>
+                </div>
             </div>
         </div>
     </section>
 
     <div class="box contact" id='contact'>
-      <!-- <div class="contactGrid"> -->
         <form id='contact-form'>
-          <div class="col">
-            <input id="name" type="text" name="name" placeholder="Name">
-            <input id="email" type="email" name="email" placeholder="Email">
-            <button class="emailSubmit desk" type="submit" value="Submit" name="submit">Send!</button>
-          </div>
-          <div class="col">
-            <textarea id="message" name="message" placeholder="Leave me a message!"></textarea>
-          </div>
-          <button class="emailSubmit mobile" type="submit" value="Submit" name="submit">Send!</button>
+            <div class="col">
+                <input id="name" type="text" name="name" placeholder="Name">
+                <input id="email" type="email" name="email" placeholder="Email">
+                <button class="emailSubmit desk" type="submit" value="Submit" name="submit">Send!</button>
+            </div>
+            <div class="col">
+                <textarea id="message" name="message" placeholder="Leave me a message!"></textarea>
+            </div>
+            <button class="emailSubmit mobile" type="submit" value="Submit" name="submit">Send!</button>
         </form>
     </div>
 
     <div class="box footer">
-      <div id="copyright">&copy; Copyright 2018 Allen Welch</div>
-      <a href="https://stackoverflow.com/users/story/8834257" target=_blank><img class="connect_img" src="./assets/imgs/stackoverflow.png" alt="StackOverflow img"></a>
-      <a href="https://www.linkedin.com/in/allen-welch-659320b2/" target=_blank><img class="connect_img" src="./assets/imgs/linkedin.png" alt="Linkedin img"></a>
-      <a href="https://github.com/allenjwelch" target=_blank><img class="connect_img" id="connect_img" src="./assets/imgs/git.png" alt="GitHub img"></a>
+        <div id="copyright">&copy; Copyright 2018 Allen Welch</div>
+        <a href="https://stackoverflow.com/users/story/8834257" target=_blank><img class="connect_img" src="./assets/imgs/stackoverflow.png" alt="StackOverflow img"></a>
+        <a href="https://www.linkedin.com/in/allen-welch-659320b2/" target=_blank><img class="connect_img" src="./assets/imgs/linkedin.png" alt="Linkedin img"></a>
+        <a href="https://github.com/allenjwelch" target=_blank><img class="connect_img" id="connect_img" src="./assets/imgs/git.png" alt="GitHub img"></a>
     </div>
 
-
-
-  <!-- <div class="box footer">
-      <div id="copyright">&copy; Copyright 2018 Allen Welch</div>
-    </div> -->
     <script src="./assets/js/app.js"></script>
-
 </body>
 </html>
