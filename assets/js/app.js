@@ -21,3 +21,16 @@ $('.aboutLink').click(function() {
 $('.portfolioLink').click(function() {
     $('html,body').animate({scrollTop: $('.projectTitle').offset().top -1 },'slow');
 })
+
+if ($(window).width() < 770) {
+    $('.box').on('click', function() {
+        $(this).children('.overlay').toggleClass('active');
+    })
+}
+
+$('.dropbtn').on('click', function() {
+    $('.dropbtn').toggleClass('open');
+    $('.dropdown-content').toggleClass('open');
+});
+
+
