@@ -33,4 +33,35 @@ $('.dropbtn').on('click', function() {
     $('.dropdown-content').toggleClass('open');
 });
 
+// Project Panel Sort
+$('#sort-all').on('click', function() {
+    $('.box').addClass('active');
+    $('.sort').removeClass('active');
+    $(this).addClass('active');
+})
 
+$('#sort-react').on('click', function() {
+    addRemove($(this)); 
+    $('.react').addClass('active');
+})
+
+$('#sort-vue').on('click', function() {
+    addRemove($(this)); 
+    $('.vue').addClass('active');
+})
+
+$('#sort-node').on('click', function() {
+    addRemove($(this)); 
+    $('.node').addClass('active');
+})
+
+$('#sort-c').on('click', function() {
+    addRemove($(this));
+    $('.c').addClass('active');
+})
+
+function addRemove(elem) {
+    $('.box').removeClass('active');
+    $('.sort').removeClass('active');
+    elem.addClass('active');
+}
