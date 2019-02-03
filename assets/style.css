@@ -415,12 +415,8 @@ li a:hover {
     border-radius: 10px;
     height: 25px;
     width: 25px;
+    vertical-align: top;
     transition: all 1s;
-}
-
-.badge.badge-c {
-    height: 30px;
-    width: 35px;
 }
 
 .box .badge:hover {
