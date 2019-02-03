@@ -386,10 +386,26 @@ li a:hover {
     margin-bottom: 2px;
     color: #333;
     text-decoration: none;
+    position: relative;
+}
+
+.box a:after {
+    content: ''; 
+    position: absolute; 
+    bottom: -2px; 
+    left: 8%; 
+    height: 2px; 
+    width: 0;
+    background: #333; 
+    transition: width .3s; 
 }
 
 .box a:hover {
-    border-bottom: 2px solid #333;
+    /* border-bottom: 2px solid #333; */
+}
+
+.box a:hover:after {
+    width: 85%;
 }
 
 .box h1 {
