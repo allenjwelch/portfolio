@@ -9,10 +9,10 @@ A snapshot of myself as a developer with a collection of my most recent projects
 
 
 ## Built Using:
-* HTML5
-* CSS3
-* Javascript
-* Email.js
+* Gatsby.js
+* React
+* Javascript / JSX
+* Sass
 
 
 ## ToDo:
