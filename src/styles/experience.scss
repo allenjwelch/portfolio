@@ -1,0 +1,154 @@
+#experience {
+
+  // background-image: url('../images/hero_image.png');
+  // background-size: contain;      // Scales the image to fill the container
+  // // background-position: center; // Centers the image
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
+  // background-position: right center; 
+
+  .skills {
+
+    .skills-container {
+      .skill-card {
+        @extend %fade-animate;
+        padding: 20px;
+
+        h2 {
+          margin-top: 0;
+        }
+        p {
+          margin: 0;
+        }
+      }
+    }
+
+    .work-container {
+
+      // .ant-divider {
+      //   display: none;
+      // }
+
+      // @media (width <= 992px) {
+      //   .ant-divider {
+      //     display: block;
+      //   }
+      // }
+      
+      .company-card {
+        @extend %fade-animate;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+
+        h2, p {
+          margin: 0;
+        }
+
+        .title {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+
+          img {
+            margin-right: 10px;
+            width: 36px;
+            height: auto;
+          }
+
+          p {
+            font-style: italic;
+            color: #aaa;
+          }
+        }
+      }
+    }
+  }
+
+  .career {
+    margin-top: 24px;
+
+    width: 70%;
+
+    .ant-timeline-item-header, .ant-timeline-item-content {
+      padding: 0 10px;
+    }
+   
+  }
+
+  .tech {
+    margin-top: 24px;
+   
+    .marquee-container {
+      @extend %fade-animate;
+      overflow: hidden;
+      width: 100%;
+      white-space: nowrap;
+      margin-bottom: 5px;
+  
+      img {
+        margin: 0 5px;
+        height: 30px;
+      }
+  
+      .marquee-content {
+        display: flex;
+        justify-content: space-evenly;
+  
+        &.left {
+          animation: scroll-left 20s linear infinite;
+        }
+  
+        &.right {
+          animation: scroll-right 20s linear infinite;
+        }
+  
+        &:hover {
+          animation-play-state: paused;
+        }
+      }
+    }
+  
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+  
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  
+    @keyframes scroll-right {
+      0% {
+        transform: translateX(-50%);
+      }
+  
+      100% {
+        transform: translateX(0%);
+      }
+    }
+  }
+}
+
+%fade-animate {
+  animation: fade-in ease-in forwards;
+  animation-timeline: view();
+  animation-range: entry 10% cover 20%; /* Starts when 20% visible, finishes at 40% */
+}
+
+@keyframes fade-in {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px); 
+    
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0);
+  }
+}
