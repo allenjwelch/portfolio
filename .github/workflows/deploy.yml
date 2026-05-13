@@ -1,0 +1,24 @@
+name: Deploy Gatsby Site
+
+on:
+  push:
+    branches:
+      - main  # Trigger on pushes to the main branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '20' # Use your project's Node version
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build and Deploy to GitHub Pages
+        run: npm run deploy

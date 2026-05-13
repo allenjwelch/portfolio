@@ -1,0 +1,263 @@
+body {
+  margin: 0;
+  background: #0C0C0E;
+  color: #fff;
+}
+
+.ant-layout {
+  .ant-layout-content {
+    // transition: all 1s ease-out;
+    transition: all 1.5s ease;
+    padding: 24px;
+    // min-height: 360px;
+    background: #0C0C0E;
+    // background: #0D0D0D;
+    color: #fff;
+
+    background-image: url('../images/hero_image.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    background-size: 100%;  
+    // background-size: 100vw 120vh;   // Scales the image to fill the container
+    // background-size: contain;      // Scales the image to fill the container
+    background-position: center; // Centers the image
+    // background-position: right center; 
+    background-position: right 70px; 
+
+    // box-shadow: inset 0 0 20px 20px #0C0C0E; 
+
+    &.background-contain {
+
+      // background-size: cover;      // Scales the image to fill the container
+      // background-size: contain;      // Scales the image to fill the container
+      background-size: 50%;      // Scales the image to fill the container
+
+      // background-position: center; // Centers the image
+      background-position: right 100%; 
+
+      // animation: fade-out 2s forwards;
+    }
+    
+
+    // @keyframes fade-out {
+    //   from { 
+    //     // opacity: 0; 
+    //     // transform: scale(1);
+    //    }
+    //   to { 
+    //     // opacity: 1; 
+    //     // transform: scale(0.8); 
+    //     // background-position: right 50%; 
+    //   }
+    // }
+  }
+}
+
+section {
+  // height: '100%';
+  padding-top: 60px;
+  // min-height: 60vh;
+}
+
+.ant-divider {
+  .ant-divider-inner-text {
+    font-size: clamp(1rem, 8vw, 1.5rem);
+    color: #fff;
+  }
+  // .ant-divider-rail {
+  //   color: grey;
+  // }
+}
+
+p {
+  font-size: 16px;
+}
+
+.anticon {
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.ant-divider-inner-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#index {
+
+  .top-scroll-button {
+    position: fixed;
+    height: clamp(3rem, 4vw, 4rem);
+    top: 1%;
+    right: 2%;
+    z-index: 1000;
+
+    .top-scroll-icon {
+      display: block;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.5s ease-out;
+
+      &.visible {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    // opacity: 0;
+    // visibility: hidden;
+    // transition: all 1s ease-out;
+
+    // &.visible {
+    //   opacity: 1;
+    //   visibility: visible;
+    // }
+  }
+
+  #hero {
+    // width: 100%;
+    // text-align: center;
+    // margin-top: 0;
+    
+    // @keyframes fade-out {
+    //   from { opacity: 1; transform: scale(1); }
+    //   to { opacity: 0; transform: scale(0.8); }
+    // }
+
+    // .animate-on-exit {
+    //   /* Link animation to the element's visibility */
+    //   animation: fade-out linear;
+    //   animation-timeline: view();
+      
+    //   /* Start when it begins exiting, end when fully gone */
+    //   animation-range: exit; 
+    // }
+
+  
+    .image-container {
+      // padding: 5px;
+      margin: -24px -32px;
+      height: 80vh;
+      // min-height: 280px;
+      position: relative;
+      display: block;
+      overflow: hidden;
+  
+      // &::after {
+      //   content: '';
+      //   position: absolute;
+      //   top: 0; left: 0; right: 0; bottom: 0;
+      //   /* Match the shadow color to your page background */
+      //   box-shadow: inset 0 0 20px 20px #0C0C0E;
+      // }
+  
+      
+      img {
+        // mask-image: radial-gradient(circle, black 70%, transparent 100%);
+        // -webkit-mask-image: radial-gradient(circle, black 70%, transparent 100%);
+        max-width: 100%;
+        height: auto;
+      }
+
+      // Mobile: (< 640px) (commonly designed at 320px–375px).
+      // Tablet: (641px–1007px) (standard tablet landscape is often 768px).
+      // Desktop: (> 1008px) (standard desktop containers are often 1200px–1440px)
+
+
+      @media (width <= 1010px) {
+        height: 40vh;
+      }
+
+      @media (width <= 640px) {
+        height: 20vh;
+      }
+    }
+    
+  
+    /* The keyframes define the movement */
+    // @keyframes slide-right {
+    //   from { transform: translateX(-100%); }
+    //   to { transform: translateX(100%); }
+    // }
+  
+    @keyframes fade-in {
+      from { 
+        opacity: 0; 
+        // transform: translateY(20px); 
+        
+      }
+      to { 
+        opacity: 1; 
+        // transform: translateY(0);
+       }
+    }
+  
+    /* 2. Apply it to your text */
+    // .fade-text {
+    //   /* This ensures the animation only plays as you scroll */
+    //   animation: fade-in linear;
+    //   animation-timeline: view();
+    //   animation-range: entry 20% cover 40%; /* Starts when 20% visible, finishes at 40% */
+    // }
+  
+    .hero-text {
+      h1 {
+        margin: 0;
+        text-align: left;
+  
+        &.last-name {
+          margin-top: -10%;
+          margin-left: 15%;
+          color: #aaa;
+        }
+      }
+      font-size: 2rem;
+      margin: 0;
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 25%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: all 1s ease-out;
+  
+  
+      &.visible {
+        opacity: 1;
+        font-size: clamp(1rem, 5vw, 3.5rem);
+      }
+    }
+  
+    //   animation: fade-in linear;
+    //   // animation: fade-in 2s ease-in forwards; // TODO try this. 
+  
+    //   // animation-timeline: view();
+    //   animation-timeline: view(50%);
+  
+    //   animation-range: cover 0% cover 100%; /* Starts when 20% visible, finishes at 40% */
+      
+    //   // /* Bind animation to the scroll */
+    //   // animation: slide-right linear forwards;
+    //   // animation-timeline: scroll(); /* Link to page scroll */
+  
+    //   // opacity: 0;
+    //   // transform: translateY(30px);
+    //   // transition: all 0.8s ease-out;
+    // }
+  
+    // .fade-in {
+    //   opacity: 0;
+    //   transform: translateY(20px); /* Optional: adds a slight slide-up effect */
+    //   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    // }
+  
+    // .fade-in.visible {
+    //   opacity: 1;
+    //   transform: translateY(0);
+    // }
+  }
+}
