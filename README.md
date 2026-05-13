@@ -13,6 +13,7 @@ A snapshot of myself as a developer with a collection of my most recent projects
 * React
 * Javascript / JSX
 * Sass
+* GitHub Actions (CI)
 
 
 ## ToDo:
