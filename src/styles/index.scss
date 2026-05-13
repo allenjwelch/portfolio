@@ -16,7 +16,7 @@ body {
     background-attachment: fixed;
 
     background-size: 100%;  
-    background-position: center;
+    // background-position: center;
     background-position: right 70px; 
 
     &.background-contain {
@@ -26,7 +26,8 @@ body {
 
     @media (width <= 640px) {
       &.background-contain {
-        opacity: 0;
+        background-size: 0%;  
+        background-position: right 70px; 
       }
     }
   }
@@ -84,6 +85,7 @@ p {
       @media (width <= 640px) {
         &.visible {
           opacity: 0;
+          visibility: hidden;
         }
       }
     }
