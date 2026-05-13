@@ -16,7 +16,6 @@ body {
     background-attachment: fixed;
 
     background-size: 100%;  
-    // background-position: center;
     background-position: right 70px; 
 
     &.background-contain {
@@ -25,9 +24,12 @@ body {
     }
 
     @media (width <= 640px) {
+      background-attachment: inherit;
+      background-position: right 10px;
+
       &.background-contain {
         background-size: 0%;  
-        background-position: right 70px; 
+        background-position: right 5%; 
       }
     }
   }
