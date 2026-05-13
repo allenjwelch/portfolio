@@ -6,6 +6,17 @@ on:
       - main  # Trigger on pushes to the main branch
 
 jobs:
+  set-credentials:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Git User
+        run: |
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+
+      # - name: Setup Credentials
+      #   run: git config --global url."https://${{ secrets.GH_PAGES_PAT }}@github.com/".insteadOf "https://github.com/"
+
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
@@ -15,15 +26,10 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: '20' # Use your project's Node version
+          node-version: '22' # Use your project's Node version
 
       - name: Install Dependencies
         run: npm install
-
-      - name: Setup Git User
-        run: |
-          git config --global user.name "${{ github.actor }}"
-          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
 
       - name: Build and Deploy to GitHub Pages
         run: npm run deploy

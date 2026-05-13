@@ -4,16 +4,11 @@ A snapshot of myself as a developer with a collection of my most recent projects
 #### GitHub:  https://github.com/allenjwelch/portfolio
 #### Deployed: https://allenjwelch.github.io/portfolio/
 
-## Build Status
-![Wercker](https://img.shields.io/teamcity/codebetter/bt428.svg)
+[![Gatsby](https://img.shields.io/badge/Gatsby-%23663399.svg?logo=gatsby&logoColor=white)](#)
+[![React](https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB)](#)
+[![Sass](https://img.shields.io/badge/Sass-C69?logo=sass&logoColor=fff)](#)
+[![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=github-actions&logoColor=white)](#)
 
-
-## Built Using:
-* Gatsby.js
-* React
-* Javascript / JSX
-* Sass
-* GitHub Actions (CI)
 
 
 ## ToDo:
