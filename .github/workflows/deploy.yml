@@ -6,7 +6,7 @@ on:
       - main  # Trigger on pushes to the main branch
 
 jobs:
-  set-credentials:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Setup Git User
@@ -14,12 +14,9 @@ jobs:
           git config --global user.name "${{ github.actor }}"
           git config --global user.email "${{ github.actor }}@users.noreply.github.com"
 
-      # - name: Setup Credentials
-      #   run: git config --global url."https://${{ secrets.GH_PAGES_PAT }}@github.com/".insteadOf "https://github.com/"
+      - name: Setup Credentials
+        run: git config --global url."https://${{ secrets.GH_PAGES_PAT }}@github.com/".insteadOf "https://github.com/"
 
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
       - name: Checkout Repository
         uses: actions/checkout@v6
 
