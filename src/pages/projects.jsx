@@ -32,7 +32,7 @@ const ProjectCard = ({ title, description, githubLink, deployedLink, image }) =>
   );
 
   return (
-    <Col flex="auto" style={{ justifyItems: 'center' }}>
+    <Col>
       <Card
         cover={
           <img
