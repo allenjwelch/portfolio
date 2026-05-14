@@ -84,7 +84,7 @@ const IndexPage = () => {
   const toggleVisibility = () => {
     const width = window.innerWidth;
     // console.log(width);
-    const scrollTarget = width > 1000 ? 300 : 150;
+    const scrollTarget = width > 1000 ? 400 : 150;
     
     if (window.scrollY > scrollTarget) {
       setIsVisible(true);

@@ -28,8 +28,8 @@ body {
       background-position: right 10px;
 
       &.background-contain {
-        background-size: 0%;  
-        background-position: right 5%; 
+        background-size: 100%;  
+        background-position: right 10px; 
       }
     }
   }
@@ -71,7 +71,7 @@ p {
 
     .top-scroll-icon {
       display: block;
-      width: 100%;
+      // width: 100%;
       height: 100%;
       cursor: pointer;
       
@@ -84,12 +84,12 @@ p {
         visibility: visible;
       }
 
-      @media (width <= 640px) {
-        &.visible {
-          opacity: 0;
-          visibility: hidden;
-        }
-      }
+      // @media (width <= 640px) {
+      //   &.visible {
+      //     opacity: 0;
+      //     visibility: hidden;
+      //   }
+      // }
     }
   }
 
@@ -110,12 +110,14 @@ p {
       // Tablet: (641px–1007px) (standard tablet landscape is often 768px).
       // Desktop: (> 1008px) (standard desktop containers are often 1200px–1440px)
 
-      @media (width <= 1010px) {
-        height: 40vh;
+      @media (width <= 1200px) {
+        // height: 60vw;
+        height: 60vw;
       }
 
       @media (width <= 640px) {
-        height: 20vh;
+        // height: 20vh;
+        height: 50vw;
       }
     }
   
