@@ -12,9 +12,6 @@ import About from './about';
 import Experience from './experience';
 import Projects from './projects';  
 import Education from './education';  
-import References from './references';
-
-import HeroImage from '../images/hero_image.png';
 import LogoImage from '../images/icon.png';
 
 import ResumePdf from '../files/AllenWelch_Resume.pdf';
@@ -48,11 +45,17 @@ const anchorItems = [
 ];
 
 const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  };
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+};
+
+const handleKeyPress = (e) => {
+  if (e.key === 'Enter' || e.key === ' ') {
+    scrollToTop();
+  }
+};
 
 const TopScrollButton = ({ fade }) => {
     return (
@@ -61,7 +64,10 @@ const TopScrollButton = ({ fade }) => {
           className={`top-scroll-icon ${fade ? 'visible' : ''}`}
           src={LogoImage} 
           alt="custom" 
+          role="button"
+          tabIndex={0}
           onClick={scrollToTop}
+          onKeyDown={handleKeyPress}
         />
       </div>
     )
@@ -70,6 +76,7 @@ const TopScrollButton = ({ fade }) => {
 const IndexPage = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     window.addEventListener('scroll', toggleVisibility);
@@ -79,11 +86,14 @@ const IndexPage = () => {
 
   useEffect(() => {
     setIsLoaded(true);
+    const width = window.innerWidth;
+    if (width <= 640) {
+      setIsMobile(true);
+    }
   }, []);
 
   const toggleVisibility = () => {
     const width = window.innerWidth;
-    // console.log(width);
     const scrollTarget = width > 1000 ? 400 : 150;
     
     if (window.scrollY > scrollTarget) {
@@ -111,18 +121,16 @@ const IndexPage = () => {
         <div>
           <section id="hero">
             <div className="image-container">
-              {/* <img src={HeroImage} alt="Allen Welch" /> */}
               <div className={`hero-text ${isLoaded ? 'visible' : ''}`}>
                 <h1>Allen</h1>
                 <h1 className="last-name">Welch</h1>
               </div>
             </div>
           </section>
-          <About />
-          <Experience />
-          <Projects />
-          <Education />
-          {/* <References /> */}
+          <About mobile={isMobile} />
+          <Experience mobile={isMobile} />
+          <Projects mobile={isMobile} />
+          <Education mobile={isMobile} />
         </div>
       </Content>
       <Footer style={{ textAlign: 'left', padding: 10, marginTop: 5 }}>

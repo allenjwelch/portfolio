@@ -19,13 +19,27 @@ A snapshot of myself as a developer with a collection of my most recent projects
 Allen Welch
 
 
-### TODO
+### TODOs
+
+Optional
 - choose font style, color, and background color
-- Update Readme
 - depending on background color, change tech stack banners to black, white and grey
 - After portfolio is ready and added to linkedin, reach out to Mitul, Scott McDearman, and Evgenni for references and be prepared to give one back to them
+- on refresh go back to hero section
+
+Finish
+- add real descriptions for each lorem ipsum
+- Update Readme
+
+CleanUp
 - clean up unused files
 - organized images into folders
+- remove unused scss
+- remove comments
+
+
+
+
 
 
 

@@ -19,10 +19,10 @@ const calculateYearsFrom = (pastDate) => {
   return years;
 }
 
-export default function About() {
+export default function About({ mobile }) {
   return (
     <section id="about">
-      <Divider titlePlacement="start" style={{ borderColor: '#aaa' }}>About</Divider>
+      <Divider titlePlacement={mobile ? "center" : "start"} style={{ borderColor: '#aaa' }}>About</Divider>
       <Row justify="space-between" align="start">
         <Col sm={24} lg={16}>
           <p>
@@ -37,9 +37,6 @@ export default function About() {
           <p>
             <MailOutlined /> allenjwelch@gmail.com
           </p>
-          {/* <p>
-            <PhoneOutlined /> (123) 456-7890
-          </p> */}
         </Col>
       </Row>
     </section>
