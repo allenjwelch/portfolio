@@ -22,10 +22,10 @@ const EducationCard = ({ image, degree, institution, year, description }) => (
   </div>
 );
 
-export default function Education() {
+export default function Education({ mobile}) {
   return (
     <section id="education">
-      <Divider titlePlacement="start" style={{ borderColor: '#aaa' }}>Education</Divider>
+      <Divider titlePlacement={mobile ? "center" : "start"} style={{ borderColor: '#aaa' }}>Education</Divider>
         <Row justify="space-between" align="start">
           <Col sm={24} lg={16}>
             <EducationCard

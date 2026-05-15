@@ -12,7 +12,8 @@ import {
    
 import RiverWatchLogo from '../images/projects/riverwatch_logo.png';
 import FatCatLogo from '../images/projects/fatcat_logo.png';
-import PortfolioLogo from '../images/projects/bsb_portfolio.png';
+import PortfolioBBLogo from '../images/projects/bsb_portfolio.png';
+import PortfolioAWLogo from '../images/projects/aw_portfolio.png';
 import ComingSoonLogo from '../images/projects/coming_soon.png';
 
 import '../styles/projects.scss';
@@ -36,7 +37,7 @@ const ProjectCard = ({ title, description, githubLink, deployedLink, image }) =>
       <Card
         cover={
           <img
-            alt="project image"
+            alt="project logo"
             src={image}
           />
         }
@@ -52,10 +53,10 @@ const ProjectCard = ({ title, description, githubLink, deployedLink, image }) =>
 }
 
 
-export default function Projects() {
+export default function Projects({ mobile}) {
   return (
     <section id="projects">
-      <Divider titlePlacement="start" style={{ borderColor: '#aaa' }}>Personal Projects</Divider>
+      <Divider titlePlacement={mobile ? "center" : "start"} style={{ borderColor: '#aaa' }}>Personal Projects</Divider>
         <Row justify="space-between" align="start">
           <Col sm={24} lg={16}>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, enim distinctio. Nam maxime repudiandae veniam cum facere a eius amet officia excepturi accusantium molestiae debitis eveniet, laborum porro id hic?</p>
@@ -79,18 +80,18 @@ export default function Projects() {
             image={FatCatLogo}
             />
           <ProjectCard
-            title="Personal Portfolio"
-            description="A personal portfolio website built with React and hosted on GitHub Pages. Showcases my projects, skills, and experience in software development."
+            title="Client Portfolio"
+            description="A client portfolio website built with React and hosted on GitHub Pages. Showcases my projects, skills, and experience in software development."
             githubLink="https://github.com/brianabrock/portfolio"
             deployedLink="https://brianabrock.github.io/portfolio/"
-            image={PortfolioLogo}
+            image={PortfolioBBLogo}
           />
           <ProjectCard
-            title="Coming soon..."
-            description="A new project in the works"
-            githubLink="https://github.com"
-            deployedLink="https://github.com"
-            image={ComingSoonLogo}
+            title="Personal Portfolio"
+            description="A personal portfolio website built with React and hosted on GitHub Pages. Showcases my projects, skills, and experience in software development."
+            githubLink="https://github.com/allenjwelch/portfolio"
+            deployedLink="https://allenjwelch.github.io/portfolio/"
+            image={PortfolioAWLogo}
           />
         </Row>
       </div>

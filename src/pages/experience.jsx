@@ -1,6 +1,5 @@
 import React from 'react';
 import { 
-  Card,
   Col,
   Divider,
   Row
@@ -11,17 +10,6 @@ import EYStudiosLogo from '../images/ey_logo.png';
 import TrilogyLogo from '../images/trilogy_logo.png';
 
 import '../styles/experience.scss';
-
-const { Meta } = Card;
-
-const SkillCard = ({ skill, description }) => {
-  return (
-    <div className="skill-card">
-      <h2>{skill}</h2>
-      <p>{description}</p>
-    </div>
-  )
-}
 
 const CompanyCard = (
   {image, company, date, position, description }) => {
@@ -55,10 +43,10 @@ const Marquee = ({ direction, items }) => {
   );
 };
 
-export default function Experience() {
+export default function Experience({ mobile}) {
   return (
     <section id="experience">
-      <Divider titlePlacement="start" style={{ borderColor: '#aaa' }}>Experience</Divider>
+      <Divider titlePlacement={mobile ? "center" : "start"} style={{ borderColor: '#aaa' }}>Experience</Divider>
       <Row justify="space-between" align="start">
         <Col sm={24} lg={16}>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, enim distinctio. Nam maxime repudiandae veniam cum facere a eius amet officia excepturi accusantium molestiae debitis eveniet, laborum porro id hic?</p>
@@ -66,22 +54,6 @@ export default function Experience() {
       </Row>
       <div class="skills">
         <Row justify="space-between" align="start">
-          {/* <Col sm={24} lg={10}>
-            <div class="skills-container">
-              <SkillCard
-                skill="Frontend Development"
-                description="Experience building responsive and accessible user interfaces using React, Gatsby, and Next.js. Proficient in HTML, CSS, JavaScript, and Sass."
-              />
-              <SkillCard
-                skill="Backend Development"
-                description="Experience building RESTful APIs and GraphQL endpoints using Node.js, Express, and Spring Boot. Proficient in Java, JavaScript, and SQL."
-              />
-              <SkillCard
-                skill="Leadership"
-                description="Experience leading teams of up to 10 engineers in an Agile environment. Skilled in project management, mentorship, and cross-functional collaboration."
-              />
-            </div>
-          </Col> */}
           <Col sm={24} lg={16}>
             <div class="work-container">
               <CompanyCard 
