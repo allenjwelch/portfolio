@@ -1,7 +1,10 @@
 #experience {
 
-  .skills {
+  .description {
+    @extend %fade-animate;
+  }
 
+  .skills {
     .skills-container {
       .skill-card {
         @extend %fade-animate;

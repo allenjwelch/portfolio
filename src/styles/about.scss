@@ -1,0 +1,25 @@
+#about {
+ 
+  p {
+    @extend %fade-animate;
+  }
+}
+
+%fade-animate {
+  animation: fade-in ease-in forwards;
+  animation-timeline: view();
+  animation-range: entry 10% cover 20%; /* Starts when 20% visible, finishes at 40% */
+}
+
+
+@keyframes fade-in {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px); 
+    
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0);
+  }
+}

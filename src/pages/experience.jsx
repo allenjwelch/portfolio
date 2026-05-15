@@ -49,7 +49,7 @@ export default function Experience({ mobile}) {
       <Divider titlePlacement={mobile ? "center" : "start"} style={{ borderColor: '#aaa' }}>Experience</Divider>
       <Row justify="space-between" align="start">
         <Col sm={24} lg={16}>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, enim distinctio. Nam maxime repudiandae veniam cum facere a eius amet officia excepturi accusantium molestiae debitis eveniet, laborum porro id hic?</p>
+          <p className="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, enim distinctio. Nam maxime repudiandae veniam cum facere a eius amet officia excepturi accusantium molestiae debitis eveniet, laborum porro id hic?</p>
         </Col>
       </Row>
       <div class="skills">

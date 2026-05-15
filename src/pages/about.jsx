@@ -6,6 +6,9 @@ import {
 } from '@ant-design/icons';
 import { Col, Divider, Row } from 'antd';
 
+import '../styles/about.scss';
+
+
 const calculateYearsFrom = (pastDate) => {
   const today = new Date();
   const birthDate = new Date(pastDate);
@@ -25,7 +28,7 @@ export default function About({ mobile }) {
       <Divider titlePlacement={mobile ? "center" : "start"} style={{ borderColor: '#aaa' }}>About</Divider>
       <Row justify="space-between" align="start">
         <Col sm={24} lg={16}>
-          <p>
+          <p className="description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis totam ab beatae, unde, amet non illum illo tempora praesentium, voluptatum fuga officia nisi hic aliquid rem expedita? Aut, placeat quas.
           </p>
           <p>

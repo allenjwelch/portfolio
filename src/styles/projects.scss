@@ -1,5 +1,9 @@
 #projects {
 
+  .description {
+    @extend %fade-animate;
+  }
+
   .project-container {
     margin-top: 24px;
 
