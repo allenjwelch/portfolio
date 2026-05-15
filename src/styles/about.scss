@@ -3,6 +3,13 @@
   p {
     @extend %fade-animate;
   }
+
+  .description {
+    line-height: 1.6;
+    b {
+      color: #00ac00;
+    }
+  }
 }
 
 %fade-animate {
