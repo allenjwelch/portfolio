@@ -59,7 +59,9 @@ export default function Projects({ mobile}) {
       <Divider titlePlacement={mobile ? "center" : "start"} style={{ borderColor: '#aaa' }}>Personal Projects</Divider>
         <Row justify="space-between" align="start">
           <Col sm={24} lg={16}>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, enim distinctio. Nam maxime repudiandae veniam cum facere a eius amet officia excepturi accusantium molestiae debitis eveniet, laborum porro id hic?</p>
+            <p className="description">
+              My personal collection of full-stack and frontend projects built with a range of <b>modern</b> web technologies. These applications showcase <b>responsive</b> design, API integration, IoT automation, and custom <b>user-focused</b> experiences across personal and client projects.
+            </p>
           </Col>
         </Row>
 
@@ -67,28 +69,28 @@ export default function Projects({ mobile}) {
         <Row gutter={[16, 24]} justify="space-evenly">
           <ProjectCard
             title="River Watch"
-            description="Application to check the current river conditions"
+            description="A React frontend application hosted on Heroku that provides real-time river and weather conditions using multiple APIs, displayed through a user-friendly interface."
             githubLink="https://github.com/allenjwelch/river_watch"
             deployedLink="http://river-watch.herokuapp.com/"
             image={RiverWatchLogo}
           />
           <ProjectCard
             title="Fat Cat"
-            description="Application to schedule and trigger an in-home cat food dispenser built with React and Tessel2"
+            description="A full-stack application built with React and Node.js, hosted on a Tessel 2 device, that schedules and controls an automated cat food dispenser using fixed servos over a local network."
             githubLink="https://github.com/allenjwelch/fat_cat_TESSEL"
             deployedLink=""
             image={FatCatLogo}
             />
           <ProjectCard
             title="Client Portfolio"
-            description="A client portfolio website built with React and hosted on GitHub Pages. Showcases my projects, skills, and experience in software development."
+            description="A portfolio website built with React, Gatsby, and GitHub Pages featuring a custom multi-page, responsive design to showcase the client’s projects and artwork."
             githubLink="https://github.com/brianabrock/portfolio"
             deployedLink="https://brianabrock.github.io/portfolio/"
             image={PortfolioBBLogo}
           />
           <ProjectCard
             title="Personal Portfolio"
-            description="A personal portfolio website built with React and hosted on GitHub Pages. Showcases my projects, skills, and experience in software development."
+            description="My portfolio website built with React, Gatsby, and GitHub Pages featuring a single-page responsive design that showcases my software development projects and experience."
             githubLink="https://github.com/allenjwelch/portfolio"
             deployedLink="https://allenjwelch.github.io/portfolio/"
             image={PortfolioAWLogo}

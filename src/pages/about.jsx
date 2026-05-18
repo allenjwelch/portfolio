@@ -6,6 +6,9 @@ import {
 } from '@ant-design/icons';
 import { Col, Divider, Row } from 'antd';
 
+import '../styles/about.scss';
+
+
 const calculateYearsFrom = (pastDate) => {
   const today = new Date();
   const birthDate = new Date(pastDate);
@@ -25,8 +28,8 @@ export default function About({ mobile }) {
       <Divider titlePlacement={mobile ? "center" : "start"} style={{ borderColor: '#aaa' }}>About</Divider>
       <Row justify="space-between" align="start">
         <Col sm={24} lg={16}>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis totam ab beatae, unde, amet non illum illo tempora praesentium, voluptatum fuga officia nisi hic aliquid rem expedita? Aut, placeat quas.
+          <p className="description">
+            Full Stack Software Engineer with a background in research and education, specializing in frontend and backend development, system architecture, and <b>scalable</b> application design. Dedicated to leading <b>collaborative</b> development teams and building secure, <b>reliable</b>, and high-quality solutions from concept to deployment.
           </p>
           <p>
             <LaptopOutlined /> {calculateYearsFrom('2018-08-01')}+ years experience in software development

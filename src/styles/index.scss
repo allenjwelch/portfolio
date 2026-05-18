@@ -5,6 +5,21 @@ body {
 }
 
 .ant-layout {
+  .ant-layout-header {
+    .ant-anchor {
+      .ant-anchor-ink {
+        background-color: #00ac00;
+      }
+
+      .ant-anchor-link {
+        // font-weight: bold;
+        .ant-anchor-link-title-active {
+          color: #00ac00;
+        }
+      }
+    }
+  }
+
   .ant-layout-content {
     transition: all 1.5s ease;
     padding: 24px;
