@@ -49,7 +49,9 @@ export default function Experience({ mobile}) {
       <Divider titlePlacement={mobile ? "center" : "start"} style={{ borderColor: '#aaa' }}>Experience</Divider>
       <Row justify="space-between" align="start">
         <Col sm={24} lg={16}>
-          <p className="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, enim distinctio. Nam maxime repudiandae veniam cum facere a eius amet officia excepturi accusantium molestiae debitis eveniet, laborum porro id hic?</p>
+          <p className="description">
+            Skilled in modern web technologies with proven success designing and implementing scalable backend services, responsive frontend interfaces, and maintainable system architectures. Experienced <b>leading</b> development teams,  <b>collaborating</b> across disciplines, and <b>delivering</b> secure, high-performance applications throughout the software development lifecycle. 
+          </p>
         </Col>
       </Row>
       <div class="skills">
@@ -61,21 +63,21 @@ export default function Experience({ mobile}) {
                 company="The Home Depot"
                 date="2019 - present"
                 position="Staff Software Engineer"
-                description="lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, eaque. lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, eaque."
+                description="Built strong leadership, teamwork, and problem-solving skills in fast-paced environments, shaping my user-focused approach to software engineering and strengthening my ability to collaborate and deliver reliable solutions."
               />
               <CompanyCard 
                 image={EYStudiosLogo}
                 company="EY Studios"
                 date="2018 - 2019"
                 position="Web Developer"
-                description="lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, eaque."
+                description="Developed highly customized e-commerce sites on BigCommerce according to design prototypes and client requirements and gained valuable experience in frontend development, responsive design, and client collaboration."
               />
               <CompanyCard 
                 image={TrilogyLogo}
                 company="Trilogy Education"
                 date="2018 - 2019"
                 position="Teaching Assistant - Georgia Tech Coding Bootcamp"
-                description="lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, eaque."
+                description="Assisted instructors with grading weekly assignments and provided help to students in-person and online after class hours. This experience strengthened my ability to communicate complex technical concepts and mentor students."
               />
             </div>
           </Col>

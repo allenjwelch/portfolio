@@ -33,7 +33,7 @@ export default function Education({ mobile}) {
                 institution="Georgia Institute of Technology"
                 degree="Certificate in Full Stack Flex Web Development, Web Development and Design"
                 year="2018"
-                description="Developed multiple applications and responsive websites using various languages such as HTML, CSS, JavaScript, jQuery, Node.js, ReactJS, AngularJS, MySQL, and the Firebase API."
+                description="Developed multiple applications and responsive websites using various languages such as HTML, CSS, JavaScript, Node.js, ReactJS, AngularJS, MySQL, MongoDB, and the Firebase API."
             />
             <EducationCard
                 image={GeorgiaStateLogo}

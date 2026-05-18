@@ -29,7 +29,7 @@ export default function About({ mobile }) {
       <Row justify="space-between" align="start">
         <Col sm={24} lg={16}>
           <p className="description">
-            Full Stack Software Engineer with a background in research and education, specializing in frontend and backend development, system architecture, and <b>scalable</b> application design. Dedicated to leading <b>collaborative</b> development teams and building secure, <b>reliable</b>, and high-quality solutions from concept to deployment with a strong emphasis on usability and long-term maintainability.
+            Full Stack Software Engineer with a background in research and education, specializing in frontend and backend development, system architecture, and <b>scalable</b> application design. Dedicated to leading <b>collaborative</b> development teams and building secure, <b>reliable</b>, and high-quality solutions from concept to deployment.
           </p>
           <p>
             <LaptopOutlined /> {calculateYearsFrom('2018-08-01')}+ years experience in software development
